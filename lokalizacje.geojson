@@ -1,0 +1,309 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "farm",
+          "name": "P1"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            20.843188762664795,
+            52.35357337001027
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "farm",
+          "name": "P2"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            21.092033386230465,
+            52.338852806955316
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "farm",
+          "name": "P3"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            21.307597160339355,
+            52.16435071147503
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "farm",
+          "name": "P4"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            21.007221937179565,
+            52.101332051612864
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "farm",
+          "name": "P5"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            20.829037427902218,
+            52.170391707738766
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "farm",
+          "name": "P6"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            20.885385274887085,
+            52.238391679633885
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "warehouse",
+          "name": "M1"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            20.82784652709961,
+            52.1060439160931
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "warehouse",
+          "name": "M2"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            21.246694922447205,
+            52.12244918112621
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "warehouse",
+          "name": "M3"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            21.10646367073059,
+            52.33054656901785
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "grocery",
+          "name": "S1"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            20.93740940093994,
+            52.23551059840794
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "grocery",
+          "name": "S2"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            21.164013147354126,
+            52.20363869214984
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "grocery",
+          "name": "S3"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            20.938541293144223,
+            52.17329346333054
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "grocery",
+          "name": "S4"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            21.002479791641235,
+            52.23009944216261
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "grocery",
+          "name": "S5"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            21.105557084083557,
+            52.23164039110739
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "grocery",
+          "name": "S6"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            20.930521488189697,
+            52.29501603769809
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "grocery",
+          "name": "S7"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            20.96687078475952,
+            52.31730712241514
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "grocery",
+          "name": "S8"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            21.059128046035767,
+            52.13947396345509
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "grocery",
+          "name": "S9"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            21.04747116565704,
+            52.276839648664584
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "grocery",
+          "name": "S10"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            21.004014015197754,
+            52.17964902851693
+          ]
+        }
+      }
+    ]
+  }
