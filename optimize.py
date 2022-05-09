@@ -38,7 +38,6 @@ model.price_per_km_tonne = Param(initialize=4.0)
 model.shipment_to_warehouses = Var(model.farms, model.warehouses, model.vegetables, within=NonNegativeReals)
 model.shipment_to_shops = Var(model.warehouses, model.shops, model.weeks, model.vegetables, within=NonNegativeReals)
 model.shop_storage = Var(model.shops, model.weeks, model.vegetables, within=NonNegativeReals)
-model.shop_leftovers = Var(model.shops, model.weeks, model.vegetables, within=NonNegativeReals)
 
 # Goal
 def goal_func(model):
@@ -70,41 +69,54 @@ model.goal = Objective(rule=goal_func, sense=minimize)
 
 # Shop storage constraints
 
+"""
+Checks if shop has more vegetables than expected demand for particular week
+"""
 model.shop_has_enough_veggies = Constraint(
     model.shops, model.weeks, model.vegetables,
     rule=lambda model, shop, week, veggie: model.shop_storage[shop, week, veggie] >= model.demand[shop, week, veggie],
 )
 
+"""
+Checks if shop does not exceed capacity
+"""
 model.shop_does_not_exceed_capacity = Constraint(
     model.shops, model.weeks,
     rule=lambda model, shop, week: sum(model.shop_storage[shop, week, veggie] for veggie in model.vegetables) \
                                     <= model.shop_storage_cap[shop]
 )
 
+"""
+Checks if shop has at least 10% of average demand as said in given task
+"""
 model.shop_has_minimum_veggies = Constraint(
     model.shops, model.weeks, model.vegetables,
     rule=lambda model, shop, week, veggie: model.shop_storage[shop, week, veggie] >= model.shop_storage_min[shop, veggie]
 )
 
-# Warehouse to shop shipment
-def constraint_calc_leftovers(model, shop, week, veggie):
-    prev_leftovers = 0.0 if week == 1 else model.shop_leftovers[shop, week - 1 , veggie]
-    return model.shop_leftovers[shop, week, veggie] == \
-        prev_leftovers \
-        + sum(model.shipment_to_shops[w, shop, week, veggie] for w in model.warehouses) \
-        - model.demand[shop, week, veggie]
 
-model.calc_shop_leftovers = Constraint(model.shops, model.weeks, model.vegetables, rule=constraint_calc_leftovers)
+def constraint_shop_storage_includes_leftovers(model, shop, week, vegetable):
+    if week == 1:
+        leftovers = 0.0
+    else:
+        leftovers = model.shop_storage[shop, week - 1, vegetable] - model.demand[shop, week - 1, vegetable]
+
+    return model.shop_storage[shop, week, vegetable] == \
+        leftovers + sum(model.shipment_to_shops[w, shop, week, vegetable] for w in model.warehouses)
 
 
-def constraint_shop_shipment(model, shop, week, veggie):
-    return sum(model.shipment_to_shops[warehouse, shop, week, veggie] for warehouse in model.warehouses) \
-        + model.shop_leftovers[shop, week, veggie] \
-        >= model.demand[shop, week, veggie]
-
-model.shop_shipment = Constraint(model.shops, model.weeks, model.vegetables, rule=constraint_shop_shipment)
+"""
+Checks if shop includes leftovers from previous weeks (0 in first week)
+"""
+model.shop_storage_includes_leftovers = Constraint(
+    model.shops, model.weeks, model.vegetables,
+    rule=constraint_shop_storage_includes_leftovers,
+)
 
 # Warehouse constraints
+"""
+Checks if warehouses do not exceed maximum capacity for 1 year
+"""
 model.warehouse_does_not_exceed_capacity = Constraint(
     model.warehouses,
     rule=lambda model, warehouse: sum(model.shipment_to_warehouses[farm, warehouse, veggie]
@@ -112,6 +124,9 @@ model.warehouse_does_not_exceed_capacity = Constraint(
                                   <= model.warehouse_cap[warehouse]
 )
 
+"""
+Checks if requested shipments does not exceed number of vegetables that are stored in particular warehouse
+"""
 model.warehouse_shipments_does_not_exceed_stored_vegetables = Constraint(
     model.warehouses, model.vegetables,
     rule=lambda model, warehouse, veggie: \
@@ -120,6 +135,9 @@ model.warehouse_shipments_does_not_exceed_stored_vegetables = Constraint(
 )
 
 # Farm constraint
+"""
+Checks if requested shipments to warehouses do not exceed number of produced vegetables
+"""
 model.farm_shipment_does_not_exceed_output = Constraint(
     model.farms, model.vegetables,
     rule=lambda model, farm, veggie: sum(model.shipment_to_warehouses[farm, w, veggie] for w in model.warehouses) \
