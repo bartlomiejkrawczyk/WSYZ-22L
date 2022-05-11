@@ -6,31 +6,25 @@
 # ----------------------------------------------------------
 Problem: 
 - Name: unknown
-  Lower bound: 351539.2951
-  Upper bound: 351539.2951
+  Lower bound: 351539.295133291
+  Upper bound: 351539.295133291
   Number of objectives: 1
-  Number of constraints: 8880
-  Number of variables: 10473
-  Number of nonzeros: 6312
+  Number of constraints: 6800
+  Number of variables: 8393
+  Number of nonzeros: 23057
   Sense: minimize
 # ----------------------------------------------------------
 #   Solver Information
 # ----------------------------------------------------------
 Solver: 
 - Status: ok
-  User time: -1.0
-  System time: 0.11
-  Wallclock time: 0.11
   Termination condition: optimal
-  Termination message: Model was solved to optimality (subject to tolerances), and an optimal solution is available.
   Statistics: 
     Branch and bound: 
-      Number of bounded subproblems: None
-      Number of created subproblems: None
-    Black box: 
-      Number of iterations: 4997
+      Number of bounded subproblems: 0
+      Number of created subproblems: 0
   Error rc: 0
-  Time: 0.1217954158782959
+  Time: 0.1698923110961914
 # ----------------------------------------------------------
 #   Solution Information
 # ----------------------------------------------------------
@@ -38,11 +32,11 @@ Solution:
 - number of solutions: 1
   number of solutions displayed: 1
 - Gap: 0.0
-  Status: optimal
+  Status: feasible
   Message: None
   Objective:
     goal:
-      Value: 351539.29518192186
+      Value: 351539.2951332915
   Variable:
     shipment_to_shops[M1,S1,1,beetroot]:
       Value: 0.841755
@@ -53,73 +47,83 @@ Solution:
     shipment_to_shops[M1,S1,1,potato]:
       Value: 1.596215
     shipment_to_shops[M1,S1,10,beetroot]:
-      Value: 2.6719112
+      Value: 0.966195
     shipment_to_shops[M1,S1,10,cabbage]:
       Value: 0.929475
+    shipment_to_shops[M1,S1,10,carrot]:
+      Value: 0.95659
     shipment_to_shops[M1,S1,10,potato]:
       Value: 1.42902
+    shipment_to_shops[M1,S1,11,beetroot]:
+      Value: 0.966195
     shipment_to_shops[M1,S1,11,cabbage]:
       Value: 1.155575
     shipment_to_shops[M1,S1,11,carrot]:
-      Value: 0.478295
+      Value: 0.95659
     shipment_to_shops[M1,S1,11,potato]:
       Value: 1.496935
     shipment_to_shops[M1,S1,12,beetroot]:
-      Value: 0.4829275
+      Value: 0.966025
     shipment_to_shops[M1,S1,12,cabbage]:
-      Value: 3.52512
+      Value: 1.16229
     shipment_to_shops[M1,S1,12,carrot]:
-      Value: 0.6338875
+      Value: 0.873035
     shipment_to_shops[M1,S1,12,potato]:
       Value: 1.492175
     shipment_to_shops[M1,S1,13,beetroot]:
-      Value: 0.65783625
+      Value: 0.899385
+    shipment_to_shops[M1,S1,13,cabbage]:
+      Value: 1.181415
     shipment_to_shops[M1,S1,13,carrot]:
-      Value: 0.73425125
+      Value: 0.853825
     shipment_to_shops[M1,S1,13,potato]:
       Value: 1.57097
     shipment_to_shops[M1,S1,14,beetroot]:
-      Value: 0.78592063
+      Value: 0.906695
     shipment_to_shops[M1,S1,14,cabbage]:
-      Value: 0.5772775
+      Value: 1.167985
     shipment_to_shops[M1,S1,14,carrot]:
-      Value: 0.79556812
+      Value: 0.855355
     shipment_to_shops[M1,S1,14,potato]:
       Value: 1.546405
     shipment_to_shops[M1,S1,15,beetroot]:
-      Value: 0.81094781
+      Value: 0.871335
     shipment_to_shops[M1,S1,15,cabbage]:
-      Value: 2.9917875
+      Value: 1.195525
     shipment_to_shops[M1,S1,15,carrot]:
-      Value: 0.81730156
+      Value: 0.847195
     shipment_to_shops[M1,S1,15,potato]:
       Value: 1.574965
     shipment_to_shops[M1,S1,16,beetroot]:
-      Value: 0.86834141
+      Value: 0.898535
+    shipment_to_shops[M1,S1,16,cabbage]:
+      Value: 1.193485
     shipment_to_shops[M1,S1,16,carrot]:
-      Value: 2.4597566
+      Value: 0.84626
     shipment_to_shops[M1,S1,16,potato]:
       Value: 1.596215
     shipment_to_shops[M1,S1,17,beetroot]:
-      Value: 0.8511382
+      Value: 0.866235
     shipment_to_shops[M1,S1,17,cabbage]:
-      Value: 0.6355875
+      Value: 1.23233
+    shipment_to_shops[M1,S1,17,carrot]:
+      Value: 0.821695
     shipment_to_shops[M1,S1,17,potato]:
       Value: 1.61432
     shipment_to_shops[M1,S1,18,beetroot]:
-      Value: 0.8527366
+      Value: 0.860285
     shipment_to_shops[M1,S1,18,cabbage]:
-      Value: 0.93778375
+      Value: 1.236155
     shipment_to_shops[M1,S1,18,carrot]:
-      Value: 0.4039625
+      Value: 0.81481
     shipment_to_shops[M1,S1,18,potato]:
       Value: 1.63914
     shipment_to_shops[M1,S1,19,beetroot]:
-      Value: 0.8327958
+      Value: 0.83657
     shipment_to_shops[M1,S1,19,cabbage]:
-      Value: 1.0920694
+      Value: 1.241255
     shipment_to_shops[M1,S1,19,carrot]:
-      Value: 0.59646625
+      Value: 0.80189
     shipment_to_shops[M1,S1,19,potato]:
       Value: 1.654355
     shipment_to_shops[M1,S1,2,beetroot]:
@@ -131,83 +135,81 @@ Solution:
     shipment_to_shops[M1,S1,2,potato]:
       Value: 1.574965
     shipment_to_shops[M1,S1,20,beetroot]:
-      Value: 0.8398679
+      Value: 0.841755
     shipment_to_shops[M1,S1,20,cabbage]:
-      Value: 1.1772022
+      Value: 1.251795
     shipment_to_shops[M1,S1,20,carrot]:
-      Value: 0.69883812
+      Value: 0.80155
     shipment_to_shops[M1,S1,20,potato]:
       Value: 1.67161
     shipment_to_shops[M1,S1,21,beetroot]:
-      Value: 0.82925145
+      Value: 0.830195
     shipment_to_shops[M1,S1,21,cabbage]:
-      Value: 1.2232536
+      Value: 1.26055
     shipment_to_shops[M1,S1,21,carrot]:
-      Value: 0.73166406
+      Value: 0.78302
     shipment_to_shops[M1,S1,21,potato]:
       Value: 1.680365
     shipment_to_shops[M1,S1,22,beetroot]:
-      Value: 0.83550323
+      Value: 0.835975
     shipment_to_shops[M1,S1,22,cabbage]:
-      Value: 1.2719068
+      Value: 1.290555
     shipment_to_shops[M1,S1,22,carrot]:
-      Value: 0.74705703
+      Value: 0.772735
     shipment_to_shops[M1,S1,22,potato]:
       Value: 1.69558
     shipment_to_shops[M1,S1,23,beetroot]:
-      Value: 0.81550911
+      Value: 0.815745
     shipment_to_shops[M1,S1,23,cabbage]:
-      Value: 1.2952559
+      Value: 1.30458
     shipment_to_shops[M1,S1,23,carrot]:
-      Value: 0.75666602
+      Value: 0.769505
     shipment_to_shops[M1,S1,23,potato]:
       Value: 1.736125
     shipment_to_shops[M1,S1,24,beetroot]:
-      Value: 0.81469206
+      Value: 0.81481
     shipment_to_shops[M1,S1,24,cabbage]:
-      Value: 1.2930329
+      Value: 2.61154
     shipment_to_shops[M1,S1,24,carrot]:
-      Value: 0.75611551
+      Value: 0.762535
     shipment_to_shops[M1,S1,24,potato]:
       Value: 1.70068
     shipment_to_shops[M1,S1,25,beetroot]:
-      Value: 0.80948103
-    shipment_to_shops[M1,S1,25,cabbage]:
-      Value: 1.311514
+      Value: 0.80954
     shipment_to_shops[M1,S1,25,carrot]:
-      Value: 0.74513025
+      Value: 0.74834
     shipment_to_shops[M1,S1,25,potato]:
       Value: 1.74284
     shipment_to_shops[M1,S1,26,beetroot]:
-      Value: 0.80152051
+      Value: 0.80155
     shipment_to_shops[M1,S1,26,cabbage]:
-      Value: 1.3048595
+      Value: 1.306025
     shipment_to_shops[M1,S1,26,carrot]:
-      Value: 0.75999513
+      Value: 0.7616
     shipment_to_shops[M1,S1,26,potato]:
       Value: 1.765535
     shipment_to_shops[M1,S1,27,beetroot]:
-      Value: 0.78096526
+      Value: 0.78098
     shipment_to_shops[M1,S1,27,cabbage]:
-      Value: 1.3625622
+      Value: 1.363145
     shipment_to_shops[M1,S1,27,carrot]:
-      Value: 0.72866756
+      Value: 0.72947
     shipment_to_shops[M1,S1,27,potato]:
       Value: 1.77633
     shipment_to_shops[M1,S1,28,beetroot]:
-      Value: 0.79678263
+      Value: 0.79679
     shipment_to_shops[M1,S1,28,cabbage]:
-      Value: 1.3467886
+      Value: 1.34708
     shipment_to_shops[M1,S1,28,carrot]:
-      Value: 0.73476378
+      Value: 0.735165
     shipment_to_shops[M1,S1,28,potato]:
       Value: 1.77684
     shipment_to_shops[M1,S1,29,beetroot]:
-      Value: 0.77919131
+      Value: 0.779195
     shipment_to_shops[M1,S1,29,cabbage]:
-      Value: 1.3763443
+      Value: 1.37649
     shipment_to_shops[M1,S1,29,carrot]:
-      Value: 0.72790939
+      Value: 0.72811
     shipment_to_shops[M1,S1,29,potato]:
       Value: 1.80778
     shipment_to_shops[M1,S1,3,beetroot]:
@@ -219,85 +221,83 @@ Solution:
     shipment_to_shops[M1,S1,3,potato]:
       Value: 1.546405
     shipment_to_shops[M1,S1,30,beetroot]:
-      Value: 0.75573316
+      Value: 0.755735
     shipment_to_shops[M1,S1,30,cabbage]:
-      Value: 1.3936722
+      Value: 1.393745
     shipment_to_shops[M1,S1,30,carrot]:
-      Value: 0.7059097
+      Value: 0.70601
     shipment_to_shops[M1,S1,30,potato]:
       Value: 1.833705
     shipment_to_shops[M1,S1,31,beetroot]:
-      Value: 0.73686408
+      Value: 0.736865
     shipment_to_shops[M1,S1,31,cabbage]:
-      Value: 1.4293236
+      Value: 1.42936
     shipment_to_shops[M1,S1,31,carrot]:
-      Value: 0.68598485
+      Value: 0.686035
     shipment_to_shops[M1,S1,31,potato]:
       Value: 1.85368
     shipment_to_shops[M1,S1,32,beetroot]:
-      Value: 0.74400454
+      Value: 0.744005
     shipment_to_shops[M1,S1,32,cabbage]:
-      Value: 1.4014618
+      Value: 1.40148
     shipment_to_shops[M1,S1,32,carrot]:
-      Value: 0.70564492
+      Value: 0.70567
     shipment_to_shops[M1,S1,32,potato]:
       Value: 1.891675
     shipment_to_shops[M1,S1,33,beetroot]:
-      Value: 0.72742977
+      Value: 0.72743
     shipment_to_shops[M1,S1,33,cabbage]:
-      Value: 1.5995209
+      Value: 1.59953
     shipment_to_shops[M1,S1,33,carrot]:
-      Value: 0.68585246
+      Value: 0.685865
     shipment_to_shops[M1,S1,33,potato]:
       Value: 1.97455
     shipment_to_shops[M1,S1,34,beetroot]:
-      Value: 0.72343488
+      Value: 0.723435
     shipment_to_shops[M1,S1,34,cabbage]:
-      Value: 1.4298654
+      Value: 1.42987
     shipment_to_shops[M1,S1,34,carrot]:
-      Value: 0.67880373
+      Value: 0.67881
     shipment_to_shops[M1,S1,34,potato]:
       Value: 1.91522
     shipment_to_shops[M1,S1,35,beetroot]:
-      Value: 0.69257994
+      Value: 0.69258
     shipment_to_shops[M1,S1,35,cabbage]:
-      Value: 1.4298677
+      Value: 1.42987
     shipment_to_shops[M1,S1,35,carrot]:
-      Value: 0.59227687
+      Value: 0.59228
     shipment_to_shops[M1,S1,35,potato]:
       Value: 1.91522
     shipment_to_shops[M1,S1,36,beetroot]:
-      Value: 0.68518494
+      Value: 0.685185
     shipment_to_shops[M1,S1,36,cabbage]:
-      Value: 1.5995289
+      Value: 1.59953
     shipment_to_shops[M1,S1,36,carrot]:
-      Value: 0.64837843
+      Value: 0.64838
     shipment_to_shops[M1,S1,36,potato]:
       Value: 1.97455
     shipment_to_shops[M1,S1,37,beetroot]:
       Value: 0.685185
     shipment_to_shops[M1,S1,37,cabbage]:
-      Value: 1.4014794
+      Value: 1.40148
     shipment_to_shops[M1,S1,37,carrot]:
-      Value: 0.64837922
+      Value: 0.64838
     shipment_to_shops[M1,S1,37,potato]:
       Value: 1.891675
     shipment_to_shops[M1,S1,38,beetroot]:
       Value: 0.69258
     shipment_to_shops[M1,S1,38,cabbage]:
-      Value: 1.4293597
+      Value: 1.42936
     shipment_to_shops[M1,S1,38,carrot]:
-      Value: 0.59227961
+      Value: 0.59228
     shipment_to_shops[M1,S1,38,potato]:
-      Value: 1.85368
+      Value: 3.687385
     shipment_to_shops[M1,S1,39,beetroot]:
       Value: 0.723435
     shipment_to_shops[M1,S1,39,cabbage]:
-      Value: 1.3937449
+      Value: 1.393745
     shipment_to_shops[M1,S1,39,carrot]:
-      Value: 0.6788098
-    shipment_to_shops[M1,S1,39,potato]:
-      Value: 1.833705
+      Value: 0.67881
     shipment_to_shops[M1,S1,4,beetroot]:
       Value: 0.866235
     shipment_to_shops[M1,S1,4,cabbage]:
@@ -309,9 +309,9 @@ Solution:
     shipment_to_shops[M1,S1,40,beetroot]:
       Value: 0.72743
     shipment_to_shops[M1,S1,40,cabbage]:
-      Value: 1.3764899
+      Value: 1.37649
     shipment_to_shops[M1,S1,40,carrot]:
-      Value: 0.6858649
+      Value: 0.685865
     shipment_to_shops[M1,S1,40,potato]:
       Value: 1.80778
     shipment_to_shops[M1,S1,41,beetroot]:
@@ -319,7 +319,7 @@ Solution:
     shipment_to_shops[M1,S1,41,cabbage]:
       Value: 1.34708
     shipment_to_shops[M1,S1,41,carrot]:
-      Value: 0.70566995
+      Value: 0.70567
     shipment_to_shops[M1,S1,41,potato]:
       Value: 1.77684
     shipment_to_shops[M1,S1,42,beetroot]:
@@ -327,7 +327,7 @@ Solution:
     shipment_to_shops[M1,S1,42,cabbage]:
       Value: 1.363145
     shipment_to_shops[M1,S1,42,carrot]:
-      Value: 0.68603498
+      Value: 0.686035
     shipment_to_shops[M1,S1,42,potato]:
       Value: 1.77633
     shipment_to_shops[M1,S1,43,beetroot]:
@@ -335,7 +335,7 @@ Solution:
     shipment_to_shops[M1,S1,43,cabbage]:
       Value: 1.306025
     shipment_to_shops[M1,S1,43,carrot]:
-      Value: 0.70600999
+      Value: 0.70601
     shipment_to_shops[M1,S1,43,potato]:
       Value: 1.765535
     shipment_to_shops[M1,S1,44,beetroot]:
@@ -343,7 +343,7 @@ Solution:
     shipment_to_shops[M1,S1,44,cabbage]:
       Value: 1.313845
     shipment_to_shops[M1,S1,44,carrot]:
-      Value: 0.72810999
+      Value: 0.72811
     shipment_to_shops[M1,S1,44,potato]:
       Value: 1.74284
     shipment_to_shops[M1,S1,45,beetroot]:
@@ -419,13 +419,15 @@ Solution:
     shipment_to_shops[M1,S1,52,potato]:
       Value: 1.61432
     shipment_to_shops[M1,S1,6,beetroot]:
-      Value: 2.684725
+      Value: 0.871335
     shipment_to_shops[M1,S1,6,cabbage]:
       Value: 1.155575
     shipment_to_shops[M1,S1,6,carrot]:
       Value: 0.847195
     shipment_to_shops[M1,S1,6,potato]:
       Value: 1.496935
+    shipment_to_shops[M1,S1,7,beetroot]:
+      Value: 0.906695
     shipment_to_shops[M1,S1,7,cabbage]:
       Value: 0.929475
     shipment_to_shops[M1,S1,7,carrot]:
@@ -433,17 +435,19 @@ Solution:
     shipment_to_shops[M1,S1,7,potato]:
       Value: 1.42902
     shipment_to_shops[M1,S1,8,beetroot]:
-      Value: 0.4460375
+      Value: 0.899385
     shipment_to_shops[M1,S1,8,cabbage]:
       Value: 1.001725
     shipment_to_shops[M1,S1,8,carrot]:
-      Value: 3.64004
+      Value: 0.853825
     shipment_to_shops[M1,S1,8,potato]:
       Value: 1.45554
     shipment_to_shops[M1,S1,9,beetroot]:
-      Value: 0.73935125
+      Value: 0.966025
     shipment_to_shops[M1,S1,9,cabbage]:
       Value: 1.001725
+    shipment_to_shops[M1,S1,9,carrot]:
+      Value: 0.873035
     shipment_to_shops[M1,S1,9,potato]:
       Value: 1.45554
     shipment_to_shops[M1,S10,1,beetroot]:
@@ -455,85 +459,85 @@ Solution:
     shipment_to_shops[M1,S10,1,potato]:
       Value: 1.31801
     shipment_to_shops[M1,S10,10,beetroot]:
-      Value: 0.99688
+      Value: 1.962055
     shipment_to_shops[M1,S10,10,cabbage]:
       Value: 0.934065
     shipment_to_shops[M1,S10,10,carrot]:
       Value: 1.000705
     shipment_to_shops[M1,S10,10,potato]:
-      Value: 0.516885
+      Value: 1.128375
     shipment_to_shops[M1,S10,11,beetroot]:
-      Value: 1.4794675
+      Value: 1.962055
     shipment_to_shops[M1,S10,11,cabbage]:
       Value: 0.939335
     shipment_to_shops[M1,S10,11,carrot]:
       Value: 1.000705
     shipment_to_shops[M1,S10,11,potato]:
-      Value: 0.965175
+      Value: 1.27092
     shipment_to_shops[M1,S10,12,beetroot]:
-      Value: 1.6890562
+      Value: 1.93035
     shipment_to_shops[M1,S10,12,cabbage]:
       Value: 0.950045
     shipment_to_shops[M1,S10,12,carrot]:
       Value: 1.03887
     shipment_to_shops[M1,S10,12,potato]:
-      Value: 1.0885525
+      Value: 1.241425
     shipment_to_shops[M1,S10,13,beetroot]:
-      Value: 1.5707681
+      Value: 1.691415
     shipment_to_shops[M1,S10,13,cabbage]:
       Value: 0.965855
     shipment_to_shops[M1,S10,13,carrot]:
       Value: 0.95268
     shipment_to_shops[M1,S10,13,potato]:
-      Value: 1.2258487
+      Value: 1.302285
     shipment_to_shops[M1,S10,14,beetroot]:
-      Value: 1.6505566
+      Value: 1.71088
     shipment_to_shops[M1,S10,14,cabbage]:
       Value: 0.972995
     shipment_to_shops[M1,S10,14,carrot]:
       Value: 0.99875
     shipment_to_shops[M1,S10,14,potato]:
-      Value: 1.2544619
+      Value: 1.29268
     shipment_to_shops[M1,S10,15,beetroot]:
-      Value: 1.6354133
+      Value: 1.665575
     shipment_to_shops[M1,S10,15,cabbage]:
       Value: 1.006315
     shipment_to_shops[M1,S10,15,carrot]:
       Value: 0.91953
     shipment_to_shops[M1,S10,15,potato]:
-      Value: 1.2973709
+      Value: 1.31648
     shipment_to_shops[M1,S10,16,beetroot]:
-      Value: 1.6449691
+      Value: 1.66005
     shipment_to_shops[M1,S10,16,cabbage]:
       Value: 0.990845
     shipment_to_shops[M1,S10,16,carrot]:
       Value: 0.946645
     shipment_to_shops[M1,S10,16,potato]:
-      Value: 1.3084555
+      Value: 1.31801
     shipment_to_shops[M1,S10,17,beetroot]:
-      Value: 1.6073746
+      Value: 1.614915
     shipment_to_shops[M1,S10,17,cabbage]:
       Value: 1.022975
     shipment_to_shops[M1,S10,17,carrot]:
       Value: 0.91137
     shipment_to_shops[M1,S10,17,potato]:
-      Value: 1.3153577
+      Value: 1.320135
     shipment_to_shops[M1,S10,18,beetroot]:
-      Value: 1.6499898
+      Value: 1.65376
     shipment_to_shops[M1,S10,18,cabbage]:
       Value: 1.019575
     shipment_to_shops[M1,S10,18,carrot]:
       Value: 0.91511
     shipment_to_shops[M1,S10,18,potato]:
-      Value: 1.3310064
+      Value: 1.333395
     shipment_to_shops[M1,S10,19,beetroot]:
-      Value: 1.5918649
+      Value: 1.59375
     shipment_to_shops[M1,S10,19,cabbage]:
-      Value: 3.092385
+      Value: 1.026885
     shipment_to_shops[M1,S10,19,carrot]:
       Value: 0.90576
     shipment_to_shops[M1,S10,19,potato]:
-      Value: 1.3591457
+      Value: 1.36034
     shipment_to_shops[M1,S10,2,beetroot]:
       Value: 1.59375
     shipment_to_shops[M1,S10,2,cabbage]:
@@ -543,83 +547,85 @@ Solution:
     shipment_to_shops[M1,S10,2,potato]:
       Value: 1.31648
     shipment_to_shops[M1,S10,20,beetroot]:
-      Value: 1.6024974
+      Value: 1.60344
+    shipment_to_shops[M1,S10,20,cabbage]:
+      Value: 1.03275
     shipment_to_shops[M1,S10,20,carrot]:
       Value: 0.90831
     shipment_to_shops[M1,S10,20,potato]:
-      Value: 1.3403628
+      Value: 1.34096
     shipment_to_shops[M1,S10,21,beetroot]:
-      Value: 1.5666737
+      Value: 1.567145
     shipment_to_shops[M1,S10,21,cabbage]:
-      Value: 0.529635
+      Value: 1.04601
     shipment_to_shops[M1,S10,21,carrot]:
       Value: 0.877965
     shipment_to_shops[M1,S10,21,potato]:
-      Value: 1.3961664
+      Value: 1.396465
     shipment_to_shops[M1,S10,22,beetroot]:
-      Value: 1.5911344
+      Value: 1.59137
     shipment_to_shops[M1,S10,22,cabbage]:
-      Value: 0.7893525
+      Value: 1.04754
     shipment_to_shops[M1,S10,22,carrot]:
       Value: 0.89981
     shipment_to_shops[M1,S10,22,potato]:
-      Value: 1.4063457
+      Value: 1.406495
     shipment_to_shops[M1,S10,23,beetroot]:
-      Value: 1.5428022
+      Value: 1.54292
     shipment_to_shops[M1,S10,23,cabbage]:
-      Value: 0.94037625
+      Value: 1.06947
     shipment_to_shops[M1,S10,23,carrot]:
       Value: 0.8721
     shipment_to_shops[M1,S10,23,potato]:
-      Value: 1.4134754
+      Value: 1.41355
     shipment_to_shops[M1,S10,24,beetroot]:
-      Value: 1.5463461
+      Value: 1.546405
     shipment_to_shops[M1,S10,24,cabbage]:
-      Value: 0.99412813
+      Value: 1.058675
     shipment_to_shops[M1,S10,24,carrot]:
       Value: 0.86972
     shipment_to_shops[M1,S10,24,potato]:
-      Value: 1.4220127
+      Value: 1.42205
     shipment_to_shops[M1,S10,25,beetroot]:
-      Value: 1.5237655
+      Value: 1.523795
     shipment_to_shops[M1,S10,25,cabbage]:
-      Value: 1.0536866
+      Value: 1.08596
     shipment_to_shops[M1,S10,25,carrot]:
       Value: 0.85153
     shipment_to_shops[M1,S10,25,potato]:
-      Value: 1.4347813
+      Value: 1.4348
     shipment_to_shops[M1,S10,26,beetroot]:
-      Value: 1.5029553
+      Value: 1.50297
     shipment_to_shops[M1,S10,26,cabbage]:
-      Value: 1.0837633
+      Value: 1.0999
     shipment_to_shops[M1,S10,26,carrot]:
       Value: 0.867
     shipment_to_shops[M1,S10,26,potato]:
-      Value: 1.4460107
+      Value: 1.44602
     shipment_to_shops[M1,S10,27,beetroot]:
-      Value: 1.4945476
+      Value: 1.494555
     shipment_to_shops[M1,S10,27,cabbage]:
-      Value: 1.0967616
+      Value: 1.10483
     shipment_to_shops[M1,S10,27,carrot]:
       Value: 0.844815
     shipment_to_shops[M1,S10,27,potato]:
-      Value: 1.4592753
+      Value: 1.45928
     shipment_to_shops[M1,S10,28,beetroot]:
-      Value: 1.4832463
+      Value: 1.48325
     shipment_to_shops[M1,S10,28,cabbage]:
-      Value: 1.0987558
+      Value: 1.10279
     shipment_to_shops[M1,S10,28,carrot]:
       Value: 0.848385
     shipment_to_shops[M1,S10,28,potato]:
-      Value: 1.4835027
+      Value: 1.483505
     shipment_to_shops[M1,S10,29,beetroot]:
-      Value: 1.4459332
+      Value: 1.445935
     shipment_to_shops[M1,S10,29,cabbage]:
-      Value: 1.1194729
+      Value: 1.12149
     shipment_to_shops[M1,S10,29,carrot]:
       Value: 0.836145
     shipment_to_shops[M1,S10,29,potato]:
-      Value: 1.5600888
+      Value: 1.56009
     shipment_to_shops[M1,S10,3,beetroot]:
       Value: 1.65376
     shipment_to_shops[M1,S10,3,cabbage]:
@@ -629,49 +635,49 @@ Solution:
     shipment_to_shops[M1,S10,3,potato]:
       Value: 1.29268
     shipment_to_shops[M1,S10,30,beetroot]:
-      Value: 1.4568141
+      Value: 1.456815
     shipment_to_shops[M1,S10,30,cabbage]:
-      Value: 1.1085815
+      Value: 1.10959
     shipment_to_shops[M1,S10,30,carrot]:
       Value: 0.832915
     shipment_to_shops[M1,S10,30,potato]:
-      Value: 1.5453844
+      Value: 1.545385
     shipment_to_shops[M1,S10,31,beetroot]:
-      Value: 1.4445745
+      Value: 1.444575
     shipment_to_shops[M1,S10,31,cabbage]:
-      Value: 1.1365407
+      Value: 1.137045
     shipment_to_shops[M1,S10,31,carrot]:
       Value: 0.797385
     shipment_to_shops[M1,S10,31,potato]:
-      Value: 1.6059897
+      Value: 1.60599
     shipment_to_shops[M1,S10,32,beetroot]:
-      Value: 1.4440648
+      Value: 1.444065
     shipment_to_shops[M1,S10,32,cabbage]:
-      Value: 1.1609329
+      Value: 1.161185
     shipment_to_shops[M1,S10,32,carrot]:
       Value: 0.812175
     shipment_to_shops[M1,S10,32,potato]:
-      Value: 1.5614499
+      Value: 1.56145
     shipment_to_shops[M1,S10,33,beetroot]:
-      Value: 1.4149949
+      Value: 1.414995
     shipment_to_shops[M1,S10,33,cabbage]:
-      Value: 1.1628439
+      Value: 1.16297
     shipment_to_shops[M1,S10,33,carrot]:
       Value: 0.77231
     shipment_to_shops[M1,S10,33,potato]:
-      Value: 1.6148299
+      Value: 1.61483
     shipment_to_shops[M1,S10,34,beetroot]:
-      Value: 1.3460599
+      Value: 1.34606
     shipment_to_shops[M1,S10,34,cabbage]:
-      Value: 1.166562
+      Value: 1.166625
     shipment_to_shops[M1,S10,34,carrot]:
       Value: 0.777155
     shipment_to_shops[M1,S10,34,potato]:
       Value: 1.85844
     shipment_to_shops[M1,S10,35,beetroot]:
-      Value: 1.2452499
+      Value: 1.24525
     shipment_to_shops[M1,S10,35,cabbage]:
-      Value: 1.1665935
+      Value: 1.166625
     shipment_to_shops[M1,S10,35,carrot]:
       Value: 0.667165
     shipment_to_shops[M1,S10,35,potato]:
@@ -679,7 +685,7 @@ Solution:
     shipment_to_shops[M1,S10,36,beetroot]:
       Value: 1.314355
     shipment_to_shops[M1,S10,36,cabbage]:
-      Value: 1.1629542
+      Value: 1.16297
     shipment_to_shops[M1,S10,36,carrot]:
       Value: 0.68765
     shipment_to_shops[M1,S10,36,potato]:
@@ -687,7 +693,7 @@ Solution:
     shipment_to_shops[M1,S10,37,beetroot]:
       Value: 1.314355
     shipment_to_shops[M1,S10,37,cabbage]:
-      Value: 1.1611771
+      Value: 1.161185
     shipment_to_shops[M1,S10,37,carrot]:
       Value: 0.68765
     shipment_to_shops[M1,S10,37,potato]:
@@ -695,7 +701,7 @@ Solution:
     shipment_to_shops[M1,S10,38,beetroot]:
       Value: 1.24525
     shipment_to_shops[M1,S10,38,cabbage]:
-      Value: 1.1370411
+      Value: 1.137045
     shipment_to_shops[M1,S10,38,carrot]:
       Value: 0.667165
     shipment_to_shops[M1,S10,38,potato]:
@@ -703,7 +709,7 @@ Solution:
     shipment_to_shops[M1,S10,39,beetroot]:
       Value: 1.34606
     shipment_to_shops[M1,S10,39,cabbage]:
-      Value: 1.109588
+      Value: 1.10959
     shipment_to_shops[M1,S10,39,carrot]:
       Value: 0.777155
     shipment_to_shops[M1,S10,39,potato]:
@@ -715,11 +721,11 @@ Solution:
     shipment_to_shops[M1,S10,4,carrot]:
       Value: 0.91137
     shipment_to_shops[M1,S10,4,potato]:
-      Value: 3.785135
+      Value: 1.302285
     shipment_to_shops[M1,S10,40,beetroot]:
       Value: 1.414995
     shipment_to_shops[M1,S10,40,cabbage]:
-      Value: 1.121489
+      Value: 1.12149
     shipment_to_shops[M1,S10,40,carrot]:
       Value: 0.77231
     shipment_to_shops[M1,S10,40,potato]:
@@ -727,7 +733,7 @@ Solution:
     shipment_to_shops[M1,S10,41,beetroot]:
       Value: 1.444065
     shipment_to_shops[M1,S10,41,cabbage]:
-      Value: 1.1027895
+      Value: 1.10279
     shipment_to_shops[M1,S10,41,carrot]:
       Value: 0.812175
     shipment_to_shops[M1,S10,41,potato]:
@@ -735,7 +741,7 @@ Solution:
     shipment_to_shops[M1,S10,42,beetroot]:
       Value: 1.444575
     shipment_to_shops[M1,S10,42,cabbage]:
-      Value: 1.1048298
+      Value: 1.10483
     shipment_to_shops[M1,S10,42,carrot]:
       Value: 0.797385
     shipment_to_shops[M1,S10,42,potato]:
@@ -743,7 +749,7 @@ Solution:
     shipment_to_shops[M1,S10,43,beetroot]:
       Value: 1.456815
     shipment_to_shops[M1,S10,43,cabbage]:
-      Value: 1.0998999
+      Value: 1.0999
     shipment_to_shops[M1,S10,43,carrot]:
       Value: 0.832915
     shipment_to_shops[M1,S10,43,potato]:
@@ -751,7 +757,7 @@ Solution:
     shipment_to_shops[M1,S10,44,beetroot]:
       Value: 1.445935
     shipment_to_shops[M1,S10,44,cabbage]:
-      Value: 1.0859599
+      Value: 1.08596
     shipment_to_shops[M1,S10,44,carrot]:
       Value: 0.836145
     shipment_to_shops[M1,S10,44,potato]:
@@ -802,6 +808,8 @@ Solution:
       Value: 0.950045
     shipment_to_shops[M1,S10,5,carrot]:
       Value: 0.946645
+    shipment_to_shops[M1,S10,5,potato]:
+      Value: 1.241425
     shipment_to_shops[M1,S10,50,beetroot]:
       Value: 1.54292
     shipment_to_shops[M1,S10,50,cabbage]:
@@ -817,15 +825,13 @@ Solution:
     shipment_to_shops[M1,S10,51,carrot]:
       Value: 0.89981
     shipment_to_shops[M1,S10,51,potato]:
-      Value: 1.333395
+      Value: 2.65353
     shipment_to_shops[M1,S10,52,beetroot]:
       Value: 1.567145
     shipment_to_shops[M1,S10,52,cabbage]:
       Value: 1.022975
     shipment_to_shops[M1,S10,52,carrot]:
       Value: 0.877965
-    shipment_to_shops[M1,S10,52,potato]:
-      Value: 1.320135
     shipment_to_shops[M1,S10,6,beetroot]:
       Value: 1.665575
     shipment_to_shops[M1,S10,6,cabbage]:
@@ -833,25 +839,31 @@ Solution:
     shipment_to_shops[M1,S10,6,carrot]:
       Value: 0.91953
     shipment_to_shops[M1,S10,6,potato]:
-      Value: 0.6502075
+      Value: 1.27092
     shipment_to_shops[M1,S10,7,beetroot]:
-      Value: 7.262995
+      Value: 1.71088
     shipment_to_shops[M1,S10,7,cabbage]:
       Value: 0.934065
     shipment_to_shops[M1,S10,7,carrot]:
       Value: 0.99875
     shipment_to_shops[M1,S10,7,potato]:
-      Value: 0.81801875
+      Value: 1.128375
+    shipment_to_shops[M1,S10,8,beetroot]:
+      Value: 1.691415
     shipment_to_shops[M1,S10,8,cabbage]:
       Value: 0.843455
     shipment_to_shops[M1,S10,8,carrot]:
       Value: 0.95268
     shipment_to_shops[M1,S10,8,potato]:
-      Value: 3.3585838
+      Value: 1.22298
+    shipment_to_shops[M1,S10,9,beetroot]:
+      Value: 1.93035
     shipment_to_shops[M1,S10,9,cabbage]:
       Value: 0.843455
     shipment_to_shops[M1,S10,9,carrot]:
       Value: 1.03887
+    shipment_to_shops[M1,S10,9,potato]:
+      Value: 1.22298
     shipment_to_shops[M1,S3,1,beetroot]:
       Value: 0.767805
     shipment_to_shops[M1,S3,1,cabbage]:
@@ -1221,15 +1233,13 @@ Solution:
     shipment_to_shops[M1,S3,50,potato]:
       Value: 1.46965
     shipment_to_shops[M1,S3,51,beetroot]:
-      Value: 0.753525
+      Value: 1.49872
     shipment_to_shops[M1,S3,51,cabbage]:
       Value: 2.965055
     shipment_to_shops[M1,S3,51,carrot]:
       Value: 1.049325
     shipment_to_shops[M1,S3,51,potato]:
       Value: 1.420265
-    shipment_to_shops[M1,S3,52,beetroot]:
-      Value: 0.745195
     shipment_to_shops[M1,S3,52,cabbage]:
       Value: 2.974235
     shipment_to_shops[M1,S3,52,carrot]:
@@ -1269,7 +1279,7 @@ Solution:
     shipment_to_shops[M1,S3,9,potato]:
       Value: 1.265055
     shipment_to_shops[M1,S4,1,beetroot]:
-      Value: 5.21866
+      Value: 1.74607
     shipment_to_shops[M1,S4,1,cabbage]:
       Value: 1.937065
     shipment_to_shops[M1,S4,1,carrot]:
@@ -1277,285 +1287,313 @@ Solution:
     shipment_to_shops[M1,S4,1,potato]:
       Value: 2.169795
     shipment_to_shops[M1,S4,10,beetroot]:
-      Value: 1.8730972
+      Value: 1.98815
     shipment_to_shops[M1,S4,10,cabbage]:
-      Value: 0.903125
+      Value: 1.685465
+    shipment_to_shops[M1,S4,10,carrot]:
+      Value: 1.430125
+    shipment_to_shops[M1,S4,10,potato]:
+      Value: 1.94803
     shipment_to_shops[M1,S4,11,beetroot]:
-      Value: 7.8836172
+      Value: 1.98815
     shipment_to_shops[M1,S4,11,cabbage]:
-      Value: 1.358045
+      Value: 1.749215
+    shipment_to_shops[M1,S4,11,carrot]:
+      Value: 1.430125
     shipment_to_shops[M1,S4,11,potato]:
-      Value: 1.01932
+      Value: 1.993335
+    shipment_to_shops[M1,S4,12,beetroot]:
+      Value: 2.07774
     shipment_to_shops[M1,S4,12,cabbage]:
-      Value: 1.58933
+      Value: 1.784915
     shipment_to_shops[M1,S4,12,carrot]:
-      Value: 0.6285325
+      Value: 1.343595
     shipment_to_shops[M1,S4,12,potato]:
-      Value: 5.27561
+      Value: 2.060825
+    shipment_to_shops[M1,S4,13,beetroot]:
+      Value: 1.96639
     shipment_to_shops[M1,S4,13,cabbage]:
-      Value: 1.7628575
+      Value: 1.86065
     shipment_to_shops[M1,S4,13,carrot]:
-      Value: 0.98215375
+      Value: 1.339685
+    shipment_to_shops[M1,S4,13,potato]:
+      Value: 2.0944
     shipment_to_shops[M1,S4,14,beetroot]:
-      Value: 0.95489
+      Value: 1.938085
     shipment_to_shops[M1,S4,14,cabbage]:
-      Value: 1.8198288
+      Value: 1.868725
     shipment_to_shops[M1,S4,14,carrot]:
-      Value: 1.1475744
+      Value: 1.32634
     shipment_to_shops[M1,S4,14,potato]:
-      Value: 1.04295
+      Value: 2.09015
     shipment_to_shops[M1,S4,15,beetroot]:
-      Value: 1.3492475
+      Value: 1.840845
     shipment_to_shops[M1,S4,15,cabbage]:
-      Value: 1.9212869
+      Value: 1.945735
     shipment_to_shops[M1,S4,15,carrot]:
-      Value: 1.2089072
+      Value: 1.29829
     shipment_to_shops[M1,S4,15,potato]:
-      Value: 1.63727
+      Value: 2.16087
     shipment_to_shops[M1,S4,16,beetroot]:
-      Value: 1.5808513
+      Value: 1.82665
     shipment_to_shops[M1,S4,16,cabbage]:
-      Value: 1.9248409
+      Value: 1.937065
     shipment_to_shops[M1,S4,16,carrot]:
-      Value: 1.2700036
+      Value: 1.314695
     shipment_to_shops[M1,S4,16,potato]:
-      Value: 6.095775
+      Value: 2.169795
     shipment_to_shops[M1,S4,17,beetroot]:
-      Value: 5.1179562
+      Value: 1.814835
     shipment_to_shops[M1,S4,17,cabbage]:
-      Value: 1.985863
+      Value: 1.991975
     shipment_to_shops[M1,S4,17,carrot]:
-      Value: 1.2621743
+      Value: 1.28452
+    shipment_to_shops[M1,S4,17,potato]:
+      Value: 2.22479
+    shipment_to_shops[M1,S4,18,beetroot]:
+      Value: 1.77446
     shipment_to_shops[M1,S4,18,cabbage]:
-      Value: 10.041738
+      Value: 1.981265
     shipment_to_shops[M1,S4,18,carrot]:
-      Value: 1.2734321
+      Value: 1.284605
     shipment_to_shops[M1,S4,18,potato]:
-      Value: 1.077205
+      Value: 2.1896
     shipment_to_shops[M1,S4,19,beetroot]:
-      Value: 3.453975
+      Value: 1.736295
+    shipment_to_shops[M1,S4,19,cabbage]:
+      Value: 2.00787
     shipment_to_shops[M1,S4,19,carrot]:
-      Value: 1.2434886
+      Value: 1.249075
     shipment_to_shops[M1,S4,19,potato]:
-      Value: 1.7110925
+      Value: 2.26729
+    shipment_to_shops[M1,S4,2,beetroot]:
+      Value: 1.736295
     shipment_to_shops[M1,S4,2,cabbage]:
-      Value: 5.683185
+      Value: 1.945735
     shipment_to_shops[M1,S4,2,carrot]:
       Value: 1.249075
     shipment_to_shops[M1,S4,2,potato]:
       Value: 2.16087
+    shipment_to_shops[M1,S4,20,beetroot]:
+      Value: 1.74607
+    shipment_to_shops[M1,S4,20,cabbage]:
+      Value: 2.010505
     shipment_to_shops[M1,S4,20,carrot]:
-      Value: 1.2739918
+      Value: 1.276785
     shipment_to_shops[M1,S4,20,potato]:
-      Value: 1.9864712
+      Value: 2.26457
     shipment_to_shops[M1,S4,21,beetroot]:
-      Value: 0.850765
+      Value: 1.7238
+    shipment_to_shops[M1,S4,21,cabbage]:
+      Value: 2.024105
     shipment_to_shops[M1,S4,21,carrot]:
-      Value: 1.2262584
+      Value: 1.227655
     shipment_to_shops[M1,S4,21,potato]:
-      Value: 2.1577356
+      Value: 2.296785
     shipment_to_shops[M1,S4,22,beetroot]:
-      Value: 1.2990125
+      Value: 1.73553
     shipment_to_shops[M1,S4,22,cabbage]:
-      Value: 1.0368725
+      Value: 2.048925
     shipment_to_shops[M1,S4,22,carrot]:
-      Value: 1.2409817
+      Value: 1.24168
     shipment_to_shops[M1,S4,22,potato]:
-      Value: 2.2304903
+      Value: 2.300015
     shipment_to_shops[M1,S4,23,beetroot]:
-      Value: 1.4600663
+      Value: 1.678325
     shipment_to_shops[M1,S4,23,cabbage]:
-      Value: 1.5442588
+      Value: 2.050285
     shipment_to_shops[M1,S4,23,carrot]:
-      Value: 1.1896508
+      Value: 1.19
     shipment_to_shops[M1,S4,23,potato]:
-      Value: 2.3103877
+      Value: 2.34515
     shipment_to_shops[M1,S4,24,beetroot]:
-      Value: 1.5723406
+      Value: 1.68147
     shipment_to_shops[M1,S4,24,cabbage]:
-      Value: 1.8130819
+      Value: 2.066095
     shipment_to_shops[M1,S4,24,carrot]:
-      Value: 1.2187254
+      Value: 1.2189
     shipment_to_shops[M1,S4,24,potato]:
-      Value: 2.3336338
+      Value: 2.351015
     shipment_to_shops[M1,S4,25,beetroot]:
-      Value: 1.6016603
+      Value: 1.656225
     shipment_to_shops[M1,S4,25,cabbage]:
-      Value: 1.9436684
+      Value: 2.070175
     shipment_to_shops[M1,S4,25,carrot]:
-      Value: 1.1831127
+      Value: 1.1832
     shipment_to_shops[M1,S4,25,potato]:
-      Value: 2.3869494
+      Value: 2.39564
     shipment_to_shops[M1,S4,26,beetroot]:
-      Value: 1.6274127
+      Value: 1.654695
     shipment_to_shops[M1,S4,26,cabbage]:
-      Value: 2.0062417
+      Value: 2.069495
     shipment_to_shops[M1,S4,26,carrot]:
-      Value: 1.1647114
+      Value: 1.164755
     shipment_to_shops[M1,S4,26,potato]:
-      Value: 2.4018347
+      Value: 2.40618
     shipment_to_shops[M1,S4,27,beetroot]:
-      Value: 1.6107088
+      Value: 1.62435
     shipment_to_shops[M1,S4,27,cabbage]:
-      Value: 2.0604784
+      Value: 2.092105
     shipment_to_shops[M1,S4,27,carrot]:
-      Value: 1.1543632
+      Value: 1.154385
     shipment_to_shops[M1,S4,27,potato]:
-      Value: 2.4366474
+      Value: 2.43882
     shipment_to_shops[M1,S4,28,beetroot]:
-      Value: 1.6001044
+      Value: 1.606925
     shipment_to_shops[M1,S4,28,cabbage]:
-      Value: 2.0686417
+      Value: 2.084455
     shipment_to_shops[M1,S4,28,carrot]:
-      Value: 1.1474891
+      Value: 1.1475
     shipment_to_shops[M1,S4,28,potato]:
-      Value: 2.4635737
+      Value: 2.46466
     shipment_to_shops[M1,S4,29,beetroot]:
-      Value: 1.5754647
+      Value: 1.578875
     shipment_to_shops[M1,S4,29,cabbage]:
-      Value: 2.1534733
+      Value: 2.16138
     shipment_to_shops[M1,S4,29,carrot]:
-      Value: 1.1316845
+      Value: 1.13169
     shipment_to_shops[M1,S4,29,potato]:
-      Value: 2.4925918
+      Value: 2.493135
     shipment_to_shops[M1,S4,3,beetroot]:
-      Value: 0.9063125
+      Value: 1.77446
+    shipment_to_shops[M1,S4,3,cabbage]:
+      Value: 1.868725
     shipment_to_shops[M1,S4,3,carrot]:
       Value: 1.284605
     shipment_to_shops[M1,S4,3,potato]:
       Value: 2.09015
     shipment_to_shops[M1,S4,30,beetroot]:
-      Value: 1.5950199
+      Value: 1.596725
     shipment_to_shops[M1,S4,30,cabbage]:
-      Value: 2.1467167
+      Value: 2.15067
     shipment_to_shops[M1,S4,30,carrot]:
-      Value: 1.1450323
+      Value: 1.145035
     shipment_to_shops[M1,S4,30,potato]:
-      Value: 2.4949034
+      Value: 2.495175
     shipment_to_shops[M1,S4,31,beetroot]:
-      Value: 1.4988024
+      Value: 1.499655
     shipment_to_shops[M1,S4,31,cabbage]:
-      Value: 2.1823533
+      Value: 2.18433
     shipment_to_shops[M1,S4,31,carrot]:
-      Value: 1.1134136
+      Value: 1.113415
     shipment_to_shops[M1,S4,31,potato]:
-      Value: 2.5628692
+      Value: 2.563005
     shipment_to_shops[M1,S4,32,beetroot]:
-      Value: 1.4701587
+      Value: 1.470585
     shipment_to_shops[M1,S4,32,cabbage]:
-      Value: 2.2166617
+      Value: 2.21765
     shipment_to_shops[M1,S4,32,carrot]:
-      Value: 1.1287143
+      Value: 1.128715
     shipment_to_shops[M1,S4,32,potato]:
-      Value: 2.5529921
+      Value: 2.55306
     shipment_to_shops[M1,S4,33,beetroot]:
-      Value: 1.4677369
+      Value: 1.46795
     shipment_to_shops[M1,S4,33,cabbage]:
-      Value: 2.3073408
+      Value: 2.307835
     shipment_to_shops[M1,S4,33,carrot]:
-      Value: 1.0907197
+      Value: 1.09072
     shipment_to_shops[M1,S4,33,potato]:
-      Value: 2.6820561
+      Value: 2.68209
     shipment_to_shops[M1,S4,34,beetroot]:
-      Value: 1.4527134
+      Value: 1.45282
     shipment_to_shops[M1,S4,34,cabbage]:
-      Value: 2.2745229
+      Value: 2.27477
     shipment_to_shops[M1,S4,34,carrot]:
-      Value: 1.0806898
+      Value: 1.08069
     shipment_to_shops[M1,S4,34,potato]:
-      Value: 2.591888
+      Value: 2.591905
     shipment_to_shops[M1,S4,35,beetroot]:
-      Value: 1.4250567
+      Value: 1.42511
     shipment_to_shops[M1,S4,35,cabbage]:
-      Value: 2.2746465
+      Value: 2.27477
     shipment_to_shops[M1,S4,35,carrot]:
-      Value: 1.0714249
+      Value: 1.071425
     shipment_to_shops[M1,S4,35,potato]:
-      Value: 2.5918965
+      Value: 2.591905
     shipment_to_shops[M1,S4,36,beetroot]:
-      Value: 1.3513034
+      Value: 1.35133
     shipment_to_shops[M1,S4,36,cabbage]:
-      Value: 2.3077732
+      Value: 2.307835
     shipment_to_shops[M1,S4,36,carrot]:
       Value: 1.0676
     shipment_to_shops[M1,S4,36,potato]:
-      Value: 2.6820858
+      Value: 2.68209
     shipment_to_shops[M1,S4,37,beetroot]:
-      Value: 1.3513167
+      Value: 1.35133
     shipment_to_shops[M1,S4,37,cabbage]:
-      Value: 2.2176191
+      Value: 2.21765
     shipment_to_shops[M1,S4,37,carrot]:
       Value: 1.0676
     shipment_to_shops[M1,S4,37,potato]:
-      Value: 2.5530579
+      Value: 2.55306
     shipment_to_shops[M1,S4,38,beetroot]:
-      Value: 1.4251033
+      Value: 1.42511
     shipment_to_shops[M1,S4,38,cabbage]:
-      Value: 2.1843146
+      Value: 2.18433
     shipment_to_shops[M1,S4,38,carrot]:
       Value: 1.071425
     shipment_to_shops[M1,S4,38,potato]:
-      Value: 2.5630039
+      Value: 2.563005
     shipment_to_shops[M1,S4,39,beetroot]:
-      Value: 1.4528167
+      Value: 1.45282
     shipment_to_shops[M1,S4,39,cabbage]:
-      Value: 2.1506623
+      Value: 2.15067
     shipment_to_shops[M1,S4,39,carrot]:
       Value: 1.08069
     shipment_to_shops[M1,S4,39,potato]:
-      Value: 2.4951745
+      Value: 2.495175
     shipment_to_shops[M1,S4,4,beetroot]:
-      Value: 1.3807612
+      Value: 1.814835
     shipment_to_shops[M1,S4,4,cabbage]:
-      Value: 0.9262875
+      Value: 1.86065
     shipment_to_shops[M1,S4,4,carrot]:
-      Value: 3.91391
+      Value: 1.28452
     shipment_to_shops[M1,S4,4,potato]:
       Value: 2.0944
     shipment_to_shops[M1,S4,40,beetroot]:
-      Value: 1.4679483
+      Value: 1.46795
     shipment_to_shops[M1,S4,40,cabbage]:
-      Value: 2.1613761
+      Value: 2.16138
     shipment_to_shops[M1,S4,40,carrot]:
       Value: 1.09072
     shipment_to_shops[M1,S4,40,potato]:
-      Value: 2.4931347
+      Value: 2.493135
     shipment_to_shops[M1,S4,41,beetroot]:
-      Value: 1.4705842
+      Value: 1.470585
     shipment_to_shops[M1,S4,41,cabbage]:
-      Value: 2.0844531
+      Value: 2.084455
     shipment_to_shops[M1,S4,41,carrot]:
       Value: 1.128715
     shipment_to_shops[M1,S4,41,potato]:
-      Value: 2.4646599
+      Value: 2.46466
     shipment_to_shops[M1,S4,42,beetroot]:
-      Value: 1.4996546
+      Value: 1.499655
     shipment_to_shops[M1,S4,42,cabbage]:
-      Value: 2.092104
+      Value: 2.092105
     shipment_to_shops[M1,S4,42,carrot]:
       Value: 1.113415
     shipment_to_shops[M1,S4,42,potato]:
-      Value: 2.4388199
+      Value: 2.43882
     shipment_to_shops[M1,S4,43,beetroot]:
-      Value: 1.5967248
+      Value: 1.596725
     shipment_to_shops[M1,S4,43,cabbage]:
-      Value: 2.0694945
+      Value: 2.069495
     shipment_to_shops[M1,S4,43,carrot]:
       Value: 1.145035
     shipment_to_shops[M1,S4,43,potato]:
       Value: 2.40618
     shipment_to_shops[M1,S4,44,beetroot]:
-      Value: 1.5788749
+      Value: 1.578875
     shipment_to_shops[M1,S4,44,cabbage]:
-      Value: 2.0701748
+      Value: 2.070175
     shipment_to_shops[M1,S4,44,carrot]:
       Value: 1.13169
     shipment_to_shops[M1,S4,44,potato]:
       Value: 2.39564
     shipment_to_shops[M1,S4,45,beetroot]:
-      Value: 1.6069249
+      Value: 1.606925
     shipment_to_shops[M1,S4,45,cabbage]:
-      Value: 2.0660949
+      Value: 2.066095
     shipment_to_shops[M1,S4,45,carrot]:
       Value: 1.1475
     shipment_to_shops[M1,S4,45,potato]:
@@ -1563,7 +1601,7 @@ Solution:
     shipment_to_shops[M1,S4,46,beetroot]:
       Value: 1.62435
     shipment_to_shops[M1,S4,46,cabbage]:
-      Value: 2.0502849
+      Value: 2.050285
     shipment_to_shops[M1,S4,46,carrot]:
       Value: 1.154385
     shipment_to_shops[M1,S4,46,potato]:
@@ -1593,9 +1631,11 @@ Solution:
     shipment_to_shops[M1,S4,49,potato]:
       Value: 2.26457
     shipment_to_shops[M1,S4,5,beetroot]:
-      Value: 5.0742663
+      Value: 1.82665
     shipment_to_shops[M1,S4,5,cabbage]:
-      Value: 1.3177337
+      Value: 1.784915
+    shipment_to_shops[M1,S4,5,carrot]:
+      Value: 1.314695
     shipment_to_shops[M1,S4,5,potato]:
       Value: 2.060825
     shipment_to_shops[M1,S4,50,beetroot]:
@@ -1622,410 +1662,444 @@ Solution:
       Value: 1.227655
     shipment_to_shops[M1,S4,52,potato]:
       Value: 2.22479
+    shipment_to_shops[M1,S4,6,beetroot]:
+      Value: 1.840845
     shipment_to_shops[M1,S4,6,cabbage]:
-      Value: 1.5156244
+      Value: 1.749215
     shipment_to_shops[M1,S4,6,carrot]:
-      Value: 0.6409425
+      Value: 1.29829
     shipment_to_shops[M1,S4,6,potato]:
       Value: 1.993335
     shipment_to_shops[M1,S4,7,beetroot]:
-      Value: 1.0176625
+      Value: 1.938085
     shipment_to_shops[M1,S4,7,cabbage]:
-      Value: 1.5686697
+      Value: 1.685465
     shipment_to_shops[M1,S4,7,carrot]:
-      Value: 0.99766625
+      Value: 1.32634
     shipment_to_shops[M1,S4,7,potato]:
       Value: 1.94803
     shipment_to_shops[M1,S4,8,beetroot]:
-      Value: 1.5061788
+      Value: 1.96639
     shipment_to_shops[M1,S4,8,cabbage]:
-      Value: 4.5772447
+      Value: 1.56468
     shipment_to_shops[M1,S4,8,carrot]:
-      Value: 1.1753481
+      Value: 1.339685
     shipment_to_shops[M1,S4,8,potato]:
       Value: 1.7833
     shipment_to_shops[M1,S4,9,beetroot]:
-      Value: 1.8476344
+      Value: 2.07774
+    shipment_to_shops[M1,S4,9,cabbage]:
+      Value: 1.56468
     shipment_to_shops[M1,S4,9,carrot]:
-      Value: 5.4696331
+      Value: 1.343595
     shipment_to_shops[M1,S4,9,potato]:
-      Value: 5.67936
+      Value: 1.7833
+    shipment_to_shops[M1,S5,1,carrot]:
+      Value: 0.0373399999998369
+    shipment_to_shops[M1,S5,11,carrot]:
+      Value: 0.687735
     shipment_to_shops[M1,S5,12,carrot]:
-      Value: 0.691985
+      Value: 0.691985000000001
+    shipment_to_shops[M1,S5,13,carrot]:
+      Value: 0.644555
     shipment_to_shops[M1,S5,14,carrot]:
       Value: 0.654925
+    shipment_to_shops[M1,S5,15,carrot]:
+      Value: 0.64226
+    shipment_to_shops[M1,S5,16,carrot]:
+      Value: 0.632145
+    shipment_to_shops[M1,S5,17,carrot]:
+      Value: 0.6188
+    shipment_to_shops[M1,S5,18,carrot]:
+      Value: 0.627555
+    shipment_to_shops[M1,S5,19,carrot]:
+      Value: 0.584885
     shipment_to_shops[M1,S5,20,carrot]:
-      Value: 0.51028
+      Value: 0.59143
     shipment_to_shops[M1,S5,21,carrot]:
       Value: 0.579955
-    shipment_to_shops[M1,S5,25,carrot]:
-      Value: 0.56576
-    shipment_to_shops[M1,S5,30,carrot]:
-      Value: 0.535415
-    shipment_to_shops[M1,S5,4,carrot]:
-      Value: 0.6188
-    shipment_to_shops[M1,S5,40,carrot]:
-      Value: 0.49249
-    shipment_to_shops[M1,S5,47,carrot]:
-      Value: 0.5542
-    shipment_to_shops[M1,S5,48,carrot]:
-      Value: 0.56576
-    shipment_to_shops[M1,S5,50,carrot]:
-      Value: 0.569075
-    shipment_to_shops[M1,S5,7,carrot]:
-      Value: 0.654925
     shipment_to_shops[M1,S6,1,carrot]:
-      Value: 4.14341
-    shipment_to_shops[M1,S6,10,cabbage]:
-      Value: 1.16263
+      Value: 1.0336
     shipment_to_shops[M1,S6,10,carrot]:
-      Value: 1.1269805
+      Value: 1.13509
     shipment_to_shops[M1,S6,11,carrot]:
-      Value: 1.1310352
-    shipment_to_shops[M1,S6,12,cabbage]:
-      Value: 1.46064
+      Value: 1.13509
     shipment_to_shops[M1,S6,12,carrot]:
-      Value: 1.1549926
+      Value: 1.15702
     shipment_to_shops[M1,S6,13,carrot]:
-      Value: 4.3974026
-    shipment_to_shops[M1,S6,14,cabbage]:
-      Value: 1.53221
-    shipment_to_shops[M1,S6,15,cabbage]:
-      Value: 1.541475
-    shipment_to_shops[M1,S6,16,cabbage]:
-      Value: 1.554225
+      Value: 1.121235
+    shipment_to_shops[M1,S6,14,carrot]:
+      Value: 1.101005
+    shipment_to_shops[M1,S6,15,carrot]:
+      Value: 1.088595
     shipment_to_shops[M1,S6,16,carrot]:
-      Value: 0.5336725
-    shipment_to_shops[M1,S6,17,cabbage]:
-      Value: 1.569015
+      Value: 1.07797
     shipment_to_shops[M1,S6,17,carrot]:
-      Value: 2.5723125
-    shipment_to_shops[M1,S6,19,cabbage]:
-      Value: 1.61007
+      Value: 1.04057
+    shipment_to_shops[M1,S6,18,carrot]:
+      Value: 1.03802
     shipment_to_shops[M1,S6,19,carrot]:
-      Value: 0.51476
-    shipment_to_shops[M1,S6,2,cabbage]:
-      Value: 1.541475
+      Value: 1.03377
+    shipment_to_shops[M1,S6,2,carrot]:
+      Value: 1.03377
     shipment_to_shops[M1,S6,20,carrot]:
-      Value: 0.774095
-    shipment_to_shops[M1,S6,21,cabbage]:
-      Value: 1.68266
+      Value: 1.0336
     shipment_to_shops[M1,S6,21,carrot]:
-      Value: 0.8400125
+      Value: 0.969765
     shipment_to_shops[M1,S6,22,carrot]:
-      Value: 0.89689875
-    shipment_to_shops[M1,S6,23,cabbage]:
-      Value: 1.70068
+      Value: 0.961775
     shipment_to_shops[M1,S6,23,carrot]:
-      Value: 0.92568187
-    shipment_to_shops[M1,S6,24,cabbage]:
-      Value: 1.73502
+      Value: 0.95812
     shipment_to_shops[M1,S6,24,carrot]:
-      Value: 0.94207094
+      Value: 0.95829
     shipment_to_shops[M1,S6,25,carrot]:
-      Value: 0.94117047
+      Value: 0.94928
+    shipment_to_shops[M1,S6,26,cabbage]:
+      Value: 1.37139499999887
     shipment_to_shops[M1,S6,26,carrot]:
-      Value: 0.93443023
+      Value: 0.938485
     shipment_to_shops[M1,S6,27,cabbage]:
       Value: 1.799705
     shipment_to_shops[M1,S6,27,carrot]:
-      Value: 0.91350762
+      Value: 0.915535
     shipment_to_shops[M1,S6,28,cabbage]:
       Value: 1.788315
     shipment_to_shops[M1,S6,28,carrot]:
-      Value: 0.92302131
+      Value: 0.924035
     shipment_to_shops[M1,S6,29,cabbage]:
       Value: 1.806335
     shipment_to_shops[M1,S6,29,carrot]:
-      Value: 0.87907315
-    shipment_to_shops[M1,S6,3,cabbage]:
-      Value: 1.53221
+      Value: 0.87958
+    shipment_to_shops[M1,S6,3,carrot]:
+      Value: 1.03802
+    shipment_to_shops[M1,S6,30,cabbage]:
+      Value: 1.814495
     shipment_to_shops[M1,S6,30,carrot]:
-      Value: 0.90754658
+      Value: 0.9078
     shipment_to_shops[M1,S6,31,cabbage]:
       Value: 1.913605
     shipment_to_shops[M1,S6,31,carrot]:
-      Value: 0.86542829
+      Value: 0.865555
+    shipment_to_shops[M1,S6,32,cabbage]:
+      Value: 1.897285
     shipment_to_shops[M1,S6,32,carrot]:
-      Value: 0.87135664
+      Value: 0.87142
     shipment_to_shops[M1,S6,33,cabbage]:
       Value: 2.11548
     shipment_to_shops[M1,S6,33,carrot]:
-      Value: 0.83033332
+      Value: 0.830365
+    shipment_to_shops[M1,S6,34,cabbage]:
+      Value: 2.028355
     shipment_to_shops[M1,S6,34,carrot]:
-      Value: 0.84182416
+      Value: 0.84184
     shipment_to_shops[M1,S6,35,cabbage]:
       Value: 2.028355
     shipment_to_shops[M1,S6,35,carrot]:
-      Value: 0.69529208
+      Value: 0.6953
+    shipment_to_shops[M1,S6,36,cabbage]:
+      Value: 2.11548
     shipment_to_shops[M1,S6,36,carrot]:
-      Value: 0.80197104
+      Value: 0.801975
     shipment_to_shops[M1,S6,37,cabbage]:
       Value: 1.897285
     shipment_to_shops[M1,S6,37,carrot]:
-      Value: 0.80197302
+      Value: 0.801975
     shipment_to_shops[M1,S6,38,cabbage]:
       Value: 1.913605
     shipment_to_shops[M1,S6,38,carrot]:
-      Value: 0.69529901
+      Value: 0.6953
     shipment_to_shops[M1,S6,39,cabbage]:
       Value: 1.814495
     shipment_to_shops[M1,S6,39,carrot]:
-      Value: 0.84183951
+      Value: 0.84184
     shipment_to_shops[M1,S6,4,carrot]:
-      Value: 0.52156
+      Value: 1.04057
+    shipment_to_shops[M1,S6,40,cabbage]:
+      Value: 1.806335
     shipment_to_shops[M1,S6,40,carrot]:
-      Value: 0.83036475
+      Value: 0.830365
     shipment_to_shops[M1,S6,41,cabbage]:
       Value: 1.788315
     shipment_to_shops[M1,S6,41,carrot]:
-      Value: 0.87141988
+      Value: 0.87142
     shipment_to_shops[M1,S6,42,cabbage]:
       Value: 1.799705
     shipment_to_shops[M1,S6,42,carrot]:
-      Value: 0.86555494
+      Value: 0.865555
     shipment_to_shops[M1,S6,43,cabbage]:
       Value: 1.77667
     shipment_to_shops[M1,S6,43,carrot]:
-      Value: 0.90779997
+      Value: 0.9078
     shipment_to_shops[M1,S6,44,cabbage]:
       Value: 1.757035
     shipment_to_shops[M1,S6,44,carrot]:
-      Value: 0.87957998
+      Value: 0.87958
+    shipment_to_shops[M1,S6,45,cabbage]:
+      Value: 1.73502
     shipment_to_shops[M1,S6,45,carrot]:
-      Value: 0.92403499
+      Value: 0.924035
+    shipment_to_shops[M1,S6,46,cabbage]:
+      Value: 1.70068
     shipment_to_shops[M1,S6,46,carrot]:
       Value: 0.915535
     shipment_to_shops[M1,S6,47,cabbage]:
       Value: 1.69218
     shipment_to_shops[M1,S6,47,carrot]:
       Value: 0.938485
+    shipment_to_shops[M1,S6,48,cabbage]:
+      Value: 1.68266
     shipment_to_shops[M1,S6,48,carrot]:
       Value: 0.94928
+    shipment_to_shops[M1,S6,49,cabbage]:
+      Value: 1.653505
     shipment_to_shops[M1,S6,49,carrot]:
       Value: 0.95829
-    shipment_to_shops[M1,S6,5,cabbage]:
-      Value: 1.46064
     shipment_to_shops[M1,S6,5,carrot]:
-      Value: 0.818465
+      Value: 1.07797
     shipment_to_shops[M1,S6,50,cabbage]:
       Value: 1.61007
     shipment_to_shops[M1,S6,50,carrot]:
       Value: 0.95812
+    shipment_to_shops[M1,S6,51,cabbage]:
+      Value: 1.59052
     shipment_to_shops[M1,S6,51,carrot]:
       Value: 0.961775
+    shipment_to_shops[M1,S6,52,cabbage]:
+      Value: 1.569015
     shipment_to_shops[M1,S6,52,carrot]:
       Value: 0.969765
     shipment_to_shops[M1,S6,6,carrot]:
-      Value: 0.9588425
+      Value: 1.088595
     shipment_to_shops[M1,S6,7,carrot]:
-      Value: 1.0361288
-    shipment_to_shops[M1,S6,8,cabbage]:
-      Value: 0.881795
+      Value: 1.101005
     shipment_to_shops[M1,S6,8,carrot]:
-      Value: 1.0887969
+      Value: 1.121235
     shipment_to_shops[M1,S6,9,carrot]:
-      Value: 1.1408009
+      Value: 1.15702
+    shipment_to_shops[M1,S8,1,beetroot]:
+      Value: 1.78925
     shipment_to_shops[M1,S8,1,cabbage]:
       Value: 1.139255
     shipment_to_shops[M1,S8,1,carrot]:
       Value: 0.64311
+    shipment_to_shops[M1,S8,1,potato]:
+      Value: 1.15549
+    shipment_to_shops[M1,S8,10,cabbage]:
+      Value: 0.99841
+    shipment_to_shops[M1,S8,10,carrot]:
+      Value: 0.711195
     shipment_to_shops[M1,S8,10,potato]:
-      Value: 0.98618395
+      Value: 0.994755
+    shipment_to_shops[M1,S8,11,cabbage]:
+      Value: 1.071255
     shipment_to_shops[M1,S8,11,carrot]:
-      Value: 0.3555975
+      Value: 0.711195
     shipment_to_shops[M1,S8,11,potato]:
-      Value: 1.0525195
+      Value: 1.056805
     shipment_to_shops[M1,S8,12,cabbage]:
-      Value: 2.763775
+      Value: 1.06743
     shipment_to_shops[M1,S8,12,carrot]:
-      Value: 0.52455625
+      Value: 0.702355
     shipment_to_shops[M1,S8,12,potato]:
-      Value: 3.2609895
+      Value: 1.087575
+    shipment_to_shops[M1,S8,13,cabbage]:
+      Value: 1.097775
     shipment_to_shops[M1,S8,13,carrot]:
-      Value: 0.60869562
+      Value: 0.697595
+    shipment_to_shops[M1,S8,13,potato]:
+      Value: 1.08885
     shipment_to_shops[M1,S8,14,cabbage]:
-      Value: 0.5774475
+      Value: 1.126335
     shipment_to_shops[M1,S8,14,carrot]:
-      Value: 0.63410531
+      Value: 0.678555
     shipment_to_shops[M1,S8,14,potato]:
-      Value: 2.302055
+      Value: 1.097095
     shipment_to_shops[M1,S8,15,cabbage]:
-      Value: 0.86702125
+      Value: 1.141465
     shipment_to_shops[M1,S8,15,carrot]:
-      Value: 0.64264516
+      Value: 0.66487
+    shipment_to_shops[M1,S8,15,potato]:
+      Value: 1.146905
     shipment_to_shops[M1,S8,16,cabbage]:
-      Value: 1.0020331
+      Value: 1.139255
     shipment_to_shops[M1,S8,16,carrot]:
-      Value: 0.64933758
+      Value: 0.66045
     shipment_to_shops[M1,S8,16,potato]:
-      Value: 0.5820375
+      Value: 0.00255500000012243
     shipment_to_shops[M1,S8,17,cabbage]:
-      Value: 1.1150141
+      Value: 1.183625
     shipment_to_shops[M1,S8,17,carrot]:
-      Value: 0.65149379
-    shipment_to_shops[M1,S8,17,potato]:
-      Value: 0.87904875
+      Value: 0.65705
+    shipment_to_shops[M1,S8,18,cabbage]:
+      Value: 1.180565
     shipment_to_shops[M1,S8,18,carrot]:
-      Value: 1.9321038
+      Value: 0.65773
     shipment_to_shops[M1,S8,19,cabbage]:
-      Value: 3.5690145
+      Value: 1.19782
+    shipment_to_shops[M1,S8,19,carrot]:
+      Value: 0.639965
+    shipment_to_shops[M1,S8,2,beetroot]:
+      Value: 0.992485000000056
+    shipment_to_shops[M1,S8,2,cabbage]:
+      Value: 1.141465
     shipment_to_shops[M1,S8,2,carrot]:
       Value: 0.639965
     shipment_to_shops[M1,S8,2,potato]:
-      Value: 3.341095
+      Value: 1.146905
+    shipment_to_shops[M1,S8,20,cabbage]:
+      Value: 1.20275
     shipment_to_shops[M1,S8,20,carrot]:
-      Value: 0.3231275
-    shipment_to_shops[M1,S8,20,potato]:
-      Value: 1.1681842
+      Value: 0.64311
     shipment_to_shops[M1,S8,21,cabbage]:
-      Value: 0.616505
+      Value: 1.21788
     shipment_to_shops[M1,S8,21,carrot]:
-      Value: 0.47130375
+      Value: 0.631295
     shipment_to_shops[M1,S8,22,cabbage]:
-      Value: 0.9171925
+      Value: 1.21788
     shipment_to_shops[M1,S8,22,carrot]:
-      Value: 0.53574437
-    shipment_to_shops[M1,S8,22,potato]:
-      Value: 1.2175898
+      Value: 0.61574
     shipment_to_shops[M1,S8,23,cabbage]:
-      Value: 1.0807962
+      Value: 1.23114
     shipment_to_shops[M1,S8,23,carrot]:
-      Value: 0.56001719
-    shipment_to_shops[M1,S8,23,potato]:
-      Value: 1.2252883
+      Value: 0.600015
     shipment_to_shops[M1,S8,24,cabbage]:
-      Value: 1.1589431
+      Value: 1.234115
     shipment_to_shops[M1,S8,24,carrot]:
-      Value: 0.59004609
+      Value: 0.610045
     shipment_to_shops[M1,S8,24,potato]:
-      Value: 1.235955
+      Value: 1.238195
     shipment_to_shops[M1,S8,25,cabbage]:
-      Value: 1.2165041
+      Value: 1.25409
     shipment_to_shops[M1,S8,25,carrot]:
-      Value: 0.57599055
+      Value: 0.58599
     shipment_to_shops[M1,S8,25,potato]:
-      Value: 1.28
+      Value: 1.28112
+    shipment_to_shops[M1,S8,26,cabbage]:
+      Value: 1.246355
     shipment_to_shops[M1,S8,26,carrot]:
-      Value: 0.58634527
+      Value: 0.591345
     shipment_to_shops[M1,S8,26,potato]:
-      Value: 1.26781
+      Value: 1.26837
     shipment_to_shops[M1,S8,27,cabbage]:
-      Value: 1.2694285
+      Value: 1.278825
     shipment_to_shops[M1,S8,27,carrot]:
-      Value: 0.57813514
+      Value: 0.580635
     shipment_to_shops[M1,S8,27,potato]:
-      Value: 1.32623
+      Value: 1.32651
     shipment_to_shops[M1,S8,28,cabbage]:
-      Value: 1.2939318
+      Value: 1.29863
     shipment_to_shops[M1,S8,28,carrot]:
-      Value: 0.57879007
+      Value: 0.58004
     shipment_to_shops[M1,S8,28,potato]:
-      Value: 1.325095
-    shipment_to_shops[M1,S8,29,beetroot]:
-      Value: 1.6425399
+      Value: 1.325235
     shipment_to_shops[M1,S8,29,cabbage]:
-      Value: 1.3074159
+      Value: 1.309765
     shipment_to_shops[M1,S8,29,carrot]:
-      Value: 0.56581503
+      Value: 0.56644
     shipment_to_shops[M1,S8,29,potato]:
-      Value: 1.328225
+      Value: 1.328295
     shipment_to_shops[M1,S8,3,cabbage]:
       Value: 1.126335
     shipment_to_shops[M1,S8,3,carrot]:
       Value: 0.65773
+    shipment_to_shops[M1,S8,3,potato]:
+      Value: 1.097095
     shipment_to_shops[M1,S8,30,cabbage]:
-      Value: 1.154997
+      Value: 1.304665
     shipment_to_shops[M1,S8,30,carrot]:
-      Value: 0.55932752
+      Value: 0.55964
     shipment_to_shops[M1,S8,30,potato]:
-      Value: 1.331575
+      Value: 1.33161
     shipment_to_shops[M1,S8,31,cabbage]:
-      Value: 1.3430927
+      Value: 1.34368
     shipment_to_shops[M1,S8,31,carrot]:
-      Value: 0.53415376
+      Value: 0.53431
     shipment_to_shops[M1,S8,31,potato]:
-      Value: 1.3632975
+      Value: 1.363315
+    shipment_to_shops[M1,S8,32,cabbage]:
+      Value: 1.321495
     shipment_to_shops[M1,S8,32,carrot]:
-      Value: 0.54434688
+      Value: 0.544425
     shipment_to_shops[M1,S8,32,potato]:
-      Value: 1.3803062
+      Value: 1.380315
     shipment_to_shops[M1,S8,33,cabbage]:
-      Value: 1.4009082
+      Value: 1.401055
     shipment_to_shops[M1,S8,33,carrot]:
-      Value: 0.52279594
+      Value: 0.522835
+    shipment_to_shops[M1,S8,33,potato]:
+      Value: 1.488435
+    shipment_to_shops[M1,S8,34,cabbage]:
+      Value: 1.359745
     shipment_to_shops[M1,S8,34,carrot]:
-      Value: 0.50819547
+      Value: 0.508215
     shipment_to_shops[M1,S8,34,potato]:
-      Value: 1.4170328
+      Value: 1.417035
     shipment_to_shops[M1,S8,35,cabbage]:
-      Value: 1.3597083
+      Value: 1.359745
     shipment_to_shops[M1,S8,35,carrot]:
-      Value: 0.50463523
+      Value: 0.504645
     shipment_to_shops[M1,S8,35,potato]:
-      Value: 1.4170339
+      Value: 1.417035
     shipment_to_shops[M1,S8,36,cabbage]:
-      Value: 1.4010366
+      Value: 1.401055
     shipment_to_shops[M1,S8,36,carrot]:
-      Value: 0.47217012
+      Value: 0.472175
     shipment_to_shops[M1,S8,36,potato]:
-      Value: 1.4884345
+      Value: 1.488435
     shipment_to_shops[M1,S8,37,cabbage]:
-      Value: 1.3214858
+      Value: 1.321495
     shipment_to_shops[M1,S8,37,carrot]:
-      Value: 0.47217256
+      Value: 0.472175
+    shipment_to_shops[M1,S8,37,potato]:
+      Value: 1.380315
     shipment_to_shops[M1,S8,38,cabbage]:
-      Value: 1.3436754
+      Value: 1.34368
     shipment_to_shops[M1,S8,38,carrot]:
-      Value: 0.50464378
+      Value: 0.504645
     shipment_to_shops[M1,S8,38,potato]:
-      Value: 1.3633149
+      Value: 1.363315
+    shipment_to_shops[M1,S8,39,cabbage]:
+      Value: 1.304665
     shipment_to_shops[M1,S8,39,carrot]:
-      Value: 0.50821439
+      Value: 0.508215
     shipment_to_shops[M1,S8,39,potato]:
-      Value: 1.3316099
+      Value: 1.33161
     shipment_to_shops[M1,S8,4,cabbage]:
       Value: 1.097775
     shipment_to_shops[M1,S8,4,carrot]:
-      Value: 1.97795
+      Value: 0.65705
     shipment_to_shops[M1,S8,4,potato]:
-      Value: 0.5403025
+      Value: 1.08885
     shipment_to_shops[M1,S8,40,cabbage]:
-      Value: 1.3097639
+      Value: 0.0285649999998165
     shipment_to_shops[M1,S8,40,carrot]:
-      Value: 0.52283469
+      Value: 0.522835
     shipment_to_shops[M1,S8,40,potato]:
       Value: 1.328295
     shipment_to_shops[M1,S8,41,carrot]:
-      Value: 0.54442485
+      Value: 0.544425
     shipment_to_shops[M1,S8,41,potato]:
       Value: 1.325235
-    shipment_to_shops[M1,S8,42,cabbage]:
-      Value: 1.2788247
     shipment_to_shops[M1,S8,42,carrot]:
-      Value: 0.53430992
+      Value: 0.53431
     shipment_to_shops[M1,S8,42,potato]:
       Value: 1.32651
-    shipment_to_shops[M1,S8,43,cabbage]:
-      Value: 1.2463549
     shipment_to_shops[M1,S8,43,carrot]:
-      Value: 0.55963996
+      Value: 0.55964
     shipment_to_shops[M1,S8,43,potato]:
       Value: 1.26837
     shipment_to_shops[M1,S8,44,carrot]:
-      Value: 0.56643998
+      Value: 0.56644
     shipment_to_shops[M1,S8,44,potato]:
       Value: 1.28112
-    shipment_to_shops[M1,S8,45,cabbage]:
-      Value: 1.234115
     shipment_to_shops[M1,S8,45,carrot]:
-      Value: 0.58003999
+      Value: 0.58004
     shipment_to_shops[M1,S8,45,potato]:
       Value: 1.238195
     shipment_to_shops[M1,S8,46,carrot]:
       Value: 0.580635
-    shipment_to_shops[M1,S8,47,cabbage]:
-      Value: 1.21788
+    shipment_to_shops[M1,S8,46,potato]:
+      Value: 1.268115
     shipment_to_shops[M1,S8,47,carrot]:
       Value: 0.591345
     shipment_to_shops[M1,S8,47,potato]:
@@ -2034,52 +2108,56 @@ Solution:
       Value: 0.58599
     shipment_to_shops[M1,S8,48,potato]:
       Value: 1.232755
-    shipment_to_shops[M1,S8,49,cabbage]:
-      Value: 1.20275
     shipment_to_shops[M1,S8,49,carrot]:
       Value: 0.610045
     shipment_to_shops[M1,S8,49,potato]:
       Value: 1.204025
     shipment_to_shops[M1,S8,5,cabbage]:
       Value: 1.06743
+    shipment_to_shops[M1,S8,5,carrot]:
+      Value: 0.66045
     shipment_to_shops[M1,S8,5,potato]:
-      Value: 0.81330125
-    shipment_to_shops[M1,S8,50,beetroot]:
-      Value: 1.1391951
-    shipment_to_shops[M1,S8,50,cabbage]:
-      Value: 1.19782
+      Value: 1.087575
     shipment_to_shops[M1,S8,50,carrot]:
       Value: 0.600015
     shipment_to_shops[M1,S8,50,potato]:
       Value: 1.21227
-    shipment_to_shops[M1,S8,51,cabbage]:
-      Value: 1.180565
     shipment_to_shops[M1,S8,51,carrot]:
       Value: 0.61574
     shipment_to_shops[M1,S8,51,potato]:
       Value: 1.156765
     shipment_to_shops[M1,S8,52,beetroot]:
       Value: 1.764685
+    shipment_to_shops[M1,S8,52,cabbage]:
+      Value: 1.183625
     shipment_to_shops[M1,S8,52,carrot]:
       Value: 0.631295
     shipment_to_shops[M1,S8,52,potato]:
       Value: 1.165775
     shipment_to_shops[M1,S8,6,cabbage]:
-      Value: 3.068075
+      Value: 1.071255
     shipment_to_shops[M1,S8,6,carrot]:
-      Value: 1.36153
+      Value: 0.66487
+    shipment_to_shops[M1,S8,6,potato]:
+      Value: 1.056805
+    shipment_to_shops[M1,S8,7,cabbage]:
+      Value: 0.99841
+    shipment_to_shops[M1,S8,7,carrot]:
+      Value: 0.678555
     shipment_to_shops[M1,S8,7,potato]:
-      Value: 0.92618656
+      Value: 0.994755
+    shipment_to_shops[M1,S8,8,cabbage]:
+      Value: 0.933725
     shipment_to_shops[M1,S8,8,carrot]:
-      Value: 0.3583175
+      Value: 0.697595
     shipment_to_shops[M1,S8,8,potato]:
-      Value: 0.99243078
+      Value: 1.026715
     shipment_to_shops[M1,S8,9,cabbage]:
-      Value: 2.43134
+      Value: 0.933725
     shipment_to_shops[M1,S8,9,carrot]:
-      Value: 1.7854675
+      Value: 0.702355
     shipment_to_shops[M1,S8,9,potato]:
-      Value: 1.0095729
+      Value: 1.026715
     shipment_to_shops[M2,S2,1,beetroot]:
       Value: 1.221025
     shipment_to_shops[M2,S2,1,cabbage]:
@@ -2496,82 +2574,74 @@ Solution:
       Value: 0.980985
     shipment_to_shops[M2,S2,9,potato]:
       Value: 0.932195
+    shipment_to_shops[M2,S5,1,beetroot]:
+      Value: 1.727455
     shipment_to_shops[M2,S5,1,cabbage]:
       Value: 0.87499
     shipment_to_shops[M2,S5,1,carrot]:
-      Value: 0.59143
+      Value: 0.554090000000163
     shipment_to_shops[M2,S5,1,potato]:
       Value: 1.018045
+    shipment_to_shops[M2,S5,10,beetroot]:
+      Value: 1.843225
     shipment_to_shops[M2,S5,10,cabbage]:
       Value: 0.929475
     shipment_to_shops[M2,S5,10,carrot]:
-      Value: 0.687735
+      Value: 0.687734999999862
     shipment_to_shops[M2,S5,10,potato]:
       Value: 0.7718
     shipment_to_shops[M2,S5,11,beetroot]:
-      Value: 0.9216125
+      Value: 1.843225
     shipment_to_shops[M2,S5,11,cabbage]:
       Value: 0.93296
-    shipment_to_shops[M2,S5,11,carrot]:
-      Value: 0.687735
     shipment_to_shops[M2,S5,11,potato]:
       Value: 0.93313
     shipment_to_shops[M2,S5,12,beetroot]:
-      Value: 4.6421475
+      Value: 1.88309
     shipment_to_shops[M2,S5,12,cabbage]:
       Value: 0.964325
     shipment_to_shops[M2,S5,12,potato]:
       Value: 0.951915
+    shipment_to_shops[M2,S5,13,beetroot]:
+      Value: 1.840335
     shipment_to_shops[M2,S5,13,cabbage]:
       Value: 0.963985
-    shipment_to_shops[M2,S5,13,carrot]:
-      Value: 0.644555
     shipment_to_shops[M2,S5,13,potato]:
-      Value: 0.98311
+      Value: 0.983109999999998
     shipment_to_shops[M2,S5,14,beetroot]:
-      Value: 0.9170225
+      Value: 1.83719
     shipment_to_shops[M2,S5,14,cabbage]:
       Value: 1.004445
     shipment_to_shops[M2,S5,14,potato]:
       Value: 1.00946
     shipment_to_shops[M2,S5,15,beetroot]:
-      Value: 1.3190512
+      Value: 1.779135
     shipment_to_shops[M2,S5,15,cabbage]:
       Value: 0.99824
-    shipment_to_shops[M2,S5,15,carrot]:
-      Value: 0.64226
     shipment_to_shops[M2,S5,15,potato]:
       Value: 1.02306
     shipment_to_shops[M2,S5,16,beetroot]:
-      Value: 1.5402531
+      Value: 1.770295
     shipment_to_shops[M2,S5,16,cabbage]:
       Value: 1.01354
-    shipment_to_shops[M2,S5,16,carrot]:
-      Value: 0.632145
     shipment_to_shops[M2,S5,16,potato]:
       Value: 1.018045
     shipment_to_shops[M2,S5,17,beetroot]:
-      Value: 1.6536591
+      Value: 1.76868
     shipment_to_shops[M2,S5,17,cabbage]:
       Value: 1.006825
-    shipment_to_shops[M2,S5,17,carrot]:
-      Value: 0.6188
     shipment_to_shops[M2,S5,17,potato]:
       Value: 1.038445
     shipment_to_shops[M2,S5,18,beetroot]:
-      Value: 1.6872845
+      Value: 1.744795
     shipment_to_shops[M2,S5,18,cabbage]:
       Value: 1.02833
-    shipment_to_shops[M2,S5,18,carrot]:
-      Value: 0.627555
     shipment_to_shops[M2,S5,18,potato]:
       Value: 1.039805
     shipment_to_shops[M2,S5,19,beetroot]:
-      Value: 1.6964048
+      Value: 1.72516
     shipment_to_shops[M2,S5,19,cabbage]:
       Value: 1.04907
-    shipment_to_shops[M2,S5,19,carrot]:
-      Value: 0.584885
     shipment_to_shops[M2,S5,19,potato]:
       Value: 1.06165
     shipment_to_shops[M2,S5,2,beetroot]:
@@ -2582,18 +2652,20 @@ Solution:
       Value: 0.584885
     shipment_to_shops[M2,S5,2,potato]:
       Value: 1.02306
+    shipment_to_shops[M2,S5,20,beetroot]:
+      Value: 1.727455
     shipment_to_shops[M2,S5,20,cabbage]:
       Value: 1.07202
-    shipment_to_shops[M2,S5,20,carrot]:
-      Value: 0.081149998
     shipment_to_shops[M2,S5,20,potato]:
       Value: 1.0659
+    shipment_to_shops[M2,S5,21,beetroot]:
+      Value: 1.718955
     shipment_to_shops[M2,S5,21,cabbage]:
       Value: 1.060885
     shipment_to_shops[M2,S5,21,potato]:
       Value: 1.076355
     shipment_to_shops[M2,S5,22,beetroot]:
-      Value: 1.6921556
+      Value: 1.69575
     shipment_to_shops[M2,S5,22,cabbage]:
       Value: 1.073295
     shipment_to_shops[M2,S5,22,carrot]:
@@ -2601,13 +2673,15 @@ Solution:
     shipment_to_shops[M2,S5,22,potato]:
       Value: 1.07457
     shipment_to_shops[M2,S5,23,beetroot]:
-      Value: 1.6490728
+      Value: 1.65087
     shipment_to_shops[M2,S5,23,cabbage]:
       Value: 1.07729
     shipment_to_shops[M2,S5,23,carrot]:
       Value: 0.569075
     shipment_to_shops[M2,S5,23,potato]:
       Value: 1.091825
+    shipment_to_shops[M2,S5,24,beetroot]:
+      Value: 1.662855
     shipment_to_shops[M2,S5,24,cabbage]:
       Value: 1.098965
     shipment_to_shops[M2,S5,24,carrot]:
@@ -2615,11 +2689,15 @@ Solution:
     shipment_to_shops[M2,S5,24,potato]:
       Value: 1.081115
     shipment_to_shops[M2,S5,25,beetroot]:
-      Value: 1.6232207
+      Value: 1.62367
     shipment_to_shops[M2,S5,25,cabbage]:
       Value: 1.12166
+    shipment_to_shops[M2,S5,25,carrot]:
+      Value: 0.56576
     shipment_to_shops[M2,S5,25,potato]:
       Value: 1.108315
+    shipment_to_shops[M2,S5,26,beetroot]:
+      Value: 1.605905
     shipment_to_shops[M2,S5,26,cabbage]:
       Value: 1.13764
     shipment_to_shops[M2,S5,26,carrot]:
@@ -2627,13 +2705,15 @@ Solution:
     shipment_to_shops[M2,S5,26,potato]:
       Value: 1.10262
     shipment_to_shops[M2,S5,27,beetroot]:
-      Value: 1.5701777
+      Value: 1.57029
     shipment_to_shops[M2,S5,27,cabbage]:
       Value: 1.12251
     shipment_to_shops[M2,S5,27,carrot]:
       Value: 0.55369
     shipment_to_shops[M2,S5,27,potato]:
       Value: 1.141295
+    shipment_to_shops[M2,S5,28,beetroot]:
+      Value: 1.597915
     shipment_to_shops[M2,S5,28,cabbage]:
       Value: 1.147755
     shipment_to_shops[M2,S5,28,carrot]:
@@ -2641,7 +2721,7 @@ Solution:
     shipment_to_shops[M2,S5,28,potato]:
       Value: 1.145715
     shipment_to_shops[M2,S5,29,beetroot]:
-      Value: 1.5469719
+      Value: 1.547
     shipment_to_shops[M2,S5,29,cabbage]:
       Value: 1.16297
     shipment_to_shops[M2,S5,29,carrot]:
@@ -2657,19 +2737,23 @@ Solution:
     shipment_to_shops[M2,S5,3,potato]:
       Value: 1.00946
     shipment_to_shops[M2,S5,30,beetroot]:
-      Value: 1.568916
+      Value: 1.56893
     shipment_to_shops[M2,S5,30,cabbage]:
       Value: 1.1985
+    shipment_to_shops[M2,S5,30,carrot]:
+      Value: 0.535415
     shipment_to_shops[M2,S5,30,potato]:
       Value: 1.16671
     shipment_to_shops[M2,S5,31,beetroot]:
-      Value: 1.534243
+      Value: 1.53425
     shipment_to_shops[M2,S5,31,cabbage]:
       Value: 1.1985
     shipment_to_shops[M2,S5,31,carrot]:
       Value: 0.511275
     shipment_to_shops[M2,S5,31,potato]:
       Value: 1.18983
+    shipment_to_shops[M2,S5,32,beetroot]:
+      Value: 1.51385
     shipment_to_shops[M2,S5,32,cabbage]:
       Value: 1.214905
     shipment_to_shops[M2,S5,32,carrot]:
@@ -2677,7 +2761,7 @@ Solution:
     shipment_to_shops[M2,S5,32,potato]:
       Value: 1.19051
     shipment_to_shops[M2,S5,33,beetroot]:
-      Value: 1.4945532
+      Value: 1.494555
     shipment_to_shops[M2,S5,33,cabbage]:
       Value: 1.21907
     shipment_to_shops[M2,S5,33,carrot]:
@@ -2685,7 +2769,7 @@ Solution:
     shipment_to_shops[M2,S5,33,potato]:
       Value: 1.42545
     shipment_to_shops[M2,S5,34,beetroot]:
-      Value: 1.5081541
+      Value: 1.508155
     shipment_to_shops[M2,S5,34,cabbage]:
       Value: 1.233265
     shipment_to_shops[M2,S5,34,carrot]:
@@ -2693,7 +2777,7 @@ Solution:
     shipment_to_shops[M2,S5,34,potato]:
       Value: 1.30611
     shipment_to_shops[M2,S5,35,beetroot]:
-      Value: 1.3110396
+      Value: 1.31104
     shipment_to_shops[M2,S5,35,cabbage]:
       Value: 1.48274
     shipment_to_shops[M2,S5,35,carrot]:
@@ -2701,7 +2785,7 @@ Solution:
     shipment_to_shops[M2,S5,35,potato]:
       Value: 1.30611
     shipment_to_shops[M2,S5,36,beetroot]:
-      Value: 1.3934048
+      Value: 1.393405
     shipment_to_shops[M2,S5,36,cabbage]:
       Value: 1.48274
     shipment_to_shops[M2,S5,36,carrot]:
@@ -2709,7 +2793,7 @@ Solution:
     shipment_to_shops[M2,S5,36,potato]:
       Value: 1.42545
     shipment_to_shops[M2,S5,37,beetroot]:
-      Value: 1.3934049
+      Value: 1.393405
     shipment_to_shops[M2,S5,37,cabbage]:
       Value: 1.233265
     shipment_to_shops[M2,S5,37,carrot]:
@@ -2717,7 +2801,7 @@ Solution:
     shipment_to_shops[M2,S5,37,potato]:
       Value: 1.19051
     shipment_to_shops[M2,S5,38,beetroot]:
-      Value: 1.3110399
+      Value: 1.31104
     shipment_to_shops[M2,S5,38,cabbage]:
       Value: 1.21907
     shipment_to_shops[M2,S5,38,carrot]:
@@ -2736,12 +2820,16 @@ Solution:
       Value: 1.76868
     shipment_to_shops[M2,S5,4,cabbage]:
       Value: 0.99824
+    shipment_to_shops[M2,S5,4,carrot]:
+      Value: 0.6188
     shipment_to_shops[M2,S5,4,potato]:
       Value: 0.98311
     shipment_to_shops[M2,S5,40,beetroot]:
-      Value: 1.494555
+      Value: 0.949250000000334
     shipment_to_shops[M2,S5,40,cabbage]:
       Value: 1.1985
+    shipment_to_shops[M2,S5,40,carrot]:
+      Value: 0.49249
     shipment_to_shops[M2,S5,40,potato]:
       Value: 1.165265
     shipment_to_shops[M2,S5,41,cabbage]:
@@ -2750,16 +2838,12 @@ Solution:
       Value: 0.51578
     shipment_to_shops[M2,S5,41,potato]:
       Value: 1.145715
-    shipment_to_shops[M2,S5,42,beetroot]:
-      Value: 1.3038156
     shipment_to_shops[M2,S5,42,cabbage]:
       Value: 1.16297
     shipment_to_shops[M2,S5,42,carrot]:
       Value: 0.511275
     shipment_to_shops[M2,S5,42,potato]:
       Value: 1.141295
-    shipment_to_shops[M2,S5,43,beetroot]:
-      Value: 1.56893
     shipment_to_shops[M2,S5,43,cabbage]:
       Value: 1.147755
     shipment_to_shops[M2,S5,43,carrot]:
@@ -2778,28 +2862,24 @@ Solution:
       Value: 0.54026
     shipment_to_shops[M2,S5,45,potato]:
       Value: 1.081115
-    shipment_to_shops[M2,S5,46,beetroot]:
-      Value: 1.57029
     shipment_to_shops[M2,S5,46,cabbage]:
       Value: 1.12166
     shipment_to_shops[M2,S5,46,carrot]:
       Value: 0.55369
     shipment_to_shops[M2,S5,46,potato]:
       Value: 1.091825
-    shipment_to_shops[M2,S5,47,beetroot]:
-      Value: 1.605905
     shipment_to_shops[M2,S5,47,cabbage]:
       Value: 1.098965
+    shipment_to_shops[M2,S5,47,carrot]:
+      Value: 0.5542
     shipment_to_shops[M2,S5,47,potato]:
       Value: 1.07457
-    shipment_to_shops[M2,S5,48,beetroot]:
-      Value: 1.62367
     shipment_to_shops[M2,S5,48,cabbage]:
       Value: 1.07729
+    shipment_to_shops[M2,S5,48,carrot]:
+      Value: 0.56576
     shipment_to_shops[M2,S5,48,potato]:
       Value: 1.076355
-    shipment_to_shops[M2,S5,49,beetroot]:
-      Value: 1.662855
     shipment_to_shops[M2,S5,49,cabbage]:
       Value: 1.073295
     shipment_to_shops[M2,S5,49,carrot]:
@@ -2814,10 +2894,10 @@ Solution:
       Value: 0.632145
     shipment_to_shops[M2,S5,5,potato]:
       Value: 0.951915
-    shipment_to_shops[M2,S5,50,beetroot]:
-      Value: 1.65087
     shipment_to_shops[M2,S5,50,cabbage]:
       Value: 1.060885
+    shipment_to_shops[M2,S5,50,carrot]:
+      Value: 0.569075
     shipment_to_shops[M2,S5,50,potato]:
       Value: 1.06165
     shipment_to_shops[M2,S5,51,cabbage]:
@@ -2846,6 +2926,8 @@ Solution:
       Value: 1.83719
     shipment_to_shops[M2,S5,7,cabbage]:
       Value: 0.964325
+    shipment_to_shops[M2,S5,7,carrot]:
+      Value: 0.654925
     shipment_to_shops[M2,S5,7,potato]:
       Value: 0.7718
     shipment_to_shops[M2,S5,8,beetroot]:
@@ -2857,179 +2939,175 @@ Solution:
     shipment_to_shops[M2,S5,8,potato]:
       Value: 0.91426
     shipment_to_shops[M2,S5,9,beetroot]:
-      Value: 5.56954
+      Value: 1.88309
     shipment_to_shops[M2,S5,9,cabbage]:
       Value: 0.929475
     shipment_to_shops[M2,S5,9,carrot]:
       Value: 0.691985
     shipment_to_shops[M2,S5,9,potato]:
       Value: 0.91426
-    shipment_to_shops[M2,S8,1,beetroot]:
-      Value: 1.78925
-    shipment_to_shops[M2,S8,1,potato]:
-      Value: 1.15549
     shipment_to_shops[M2,S8,10,beetroot]:
-      Value: 2.0256297
+      Value: 2.084795
     shipment_to_shops[M2,S8,11,beetroot]:
-      Value: 2.0552123
-    shipment_to_shops[M2,S8,11,cabbage]:
-      Value: 0.57205
+      Value: 2.084795
     shipment_to_shops[M2,S8,12,beetroot]:
-      Value: 2.0955887
+      Value: 2.11038
     shipment_to_shops[M2,S8,13,beetroot]:
-      Value: 1.8903143
+      Value: 1.89771
     shipment_to_shops[M2,S8,14,beetroot]:
-      Value: 1.8932472
+      Value: 1.896945
     shipment_to_shops[M2,S8,15,beetroot]:
-      Value: 1.8838761
+      Value: 1.885725
     shipment_to_shops[M2,S8,16,beetroot]:
-      Value: 1.8923655
+      Value: 1.89329
+    shipment_to_shops[M2,S8,16,potato]:
+      Value: 1.15293499999988
     shipment_to_shops[M2,S8,17,beetroot]:
-      Value: 1.8312028
+      Value: 1.831665
+    shipment_to_shops[M2,S8,17,potato]:
+      Value: 1.165775
     shipment_to_shops[M2,S8,18,beetroot]:
-      Value: 1.8508989
-    shipment_to_shops[M2,S8,18,cabbage]:
-      Value: 1.1462595
+      Value: 1.85113
     shipment_to_shops[M2,S8,18,potato]:
-      Value: 1.0134019
+      Value: 1.156765
     shipment_to_shops[M2,S8,19,beetroot]:
-      Value: 1.7921094
-    shipment_to_shops[M2,S8,19,potato]:
-      Value: 1.1405884
-    shipment_to_shops[M2,S8,2,beetroot]:
       Value: 1.792225
-    shipment_to_shops[M2,S8,2,cabbage]:
-      Value: 1.141465
+    shipment_to_shops[M2,S8,19,potato]:
+      Value: 1.21227
+    shipment_to_shops[M2,S8,2,beetroot]:
+      Value: 0.799739999999943
     shipment_to_shops[M2,S8,20,beetroot]:
-      Value: 1.7891922
+      Value: 1.78925
+    shipment_to_shops[M2,S8,20,potato]:
+      Value: 1.204025
     shipment_to_shops[M2,S8,21,beetroot]:
-      Value: 1.7646561
+      Value: 1.764685
     shipment_to_shops[M2,S8,21,potato]:
-      Value: 1.2148346
+      Value: 1.232755
     shipment_to_shops[M2,S8,22,beetroot]:
-      Value: 1.7639906
+      Value: 1.764005
+    shipment_to_shops[M2,S8,22,potato]:
+      Value: 1.22655
     shipment_to_shops[M2,S8,23,beetroot]:
-      Value: 1.7251528
+      Value: 1.72516
     shipment_to_shops[M2,S8,23,potato]:
-      Value: 0.038346602
+      Value: 1.268115
     shipment_to_shops[M2,S8,24,beetroot]:
-      Value: 1.7191214
+      Value: 1.719125
     shipment_to_shops[M2,S8,25,beetroot]:
-      Value: 1.7060332
+      Value: 1.706035
     shipment_to_shops[M2,S8,26,beetroot]:
-      Value: 1.7071391
-    shipment_to_shops[M2,S8,26,cabbage]:
-      Value: 1.227562
+      Value: 1.70714
     shipment_to_shops[M2,S8,27,beetroot]:
-      Value: 1.6846145
+      Value: 1.684615
     shipment_to_shops[M2,S8,28,beetroot]:
-      Value: 1.6766248
+      Value: 1.676625
+    shipment_to_shops[M2,S8,29,beetroot]:
+      Value: 1.64254
     shipment_to_shops[M2,S8,3,beetroot]:
       Value: 1.85113
     shipment_to_shops[M2,S8,30,beetroot]:
-      Value: 1.6680399
-    shipment_to_shops[M2,S8,30,cabbage]:
-      Value: 0.14849345
+      Value: 1.66804
     shipment_to_shops[M2,S8,31,beetroot]:
       Value: 1.633955
     shipment_to_shops[M2,S8,32,beetroot]:
       Value: 1.627155
-    shipment_to_shops[M2,S8,32,cabbage]:
-      Value: 1.3212014
     shipment_to_shops[M2,S8,33,beetroot]:
       Value: 1.59052
-    shipment_to_shops[M2,S8,33,potato]:
-      Value: 1.4884306
     shipment_to_shops[M2,S8,34,beetroot]:
       Value: 1.58644
-    shipment_to_shops[M2,S8,34,cabbage]:
-      Value: 1.3596716
     shipment_to_shops[M2,S8,35,beetroot]:
       Value: 1.353285
     shipment_to_shops[M2,S8,36,beetroot]:
       Value: 1.51096
     shipment_to_shops[M2,S8,37,beetroot]:
       Value: 1.51096
-    shipment_to_shops[M2,S8,37,potato]:
-      Value: 1.3803147
     shipment_to_shops[M2,S8,38,beetroot]:
       Value: 1.353285
     shipment_to_shops[M2,S8,39,beetroot]:
       Value: 1.58644
-    shipment_to_shops[M2,S8,39,cabbage]:
-      Value: 1.3046627
     shipment_to_shops[M2,S8,4,beetroot]:
-      Value: 5.618245
+      Value: 1.831665
     shipment_to_shops[M2,S8,40,beetroot]:
       Value: 1.59052
+    shipment_to_shops[M2,S8,40,cabbage]:
+      Value: 1.28120000000018
     shipment_to_shops[M2,S8,41,beetroot]:
       Value: 1.627155
     shipment_to_shops[M2,S8,41,cabbage]:
-      Value: 1.2986294
+      Value: 1.29863
     shipment_to_shops[M2,S8,42,beetroot]:
       Value: 1.633955
+    shipment_to_shops[M2,S8,42,cabbage]:
+      Value: 1.278825
     shipment_to_shops[M2,S8,43,beetroot]:
       Value: 1.66804
+    shipment_to_shops[M2,S8,43,cabbage]:
+      Value: 1.246355
     shipment_to_shops[M2,S8,44,beetroot]:
       Value: 1.64254
     shipment_to_shops[M2,S8,44,cabbage]:
-      Value: 1.2540899
+      Value: 1.25409
     shipment_to_shops[M2,S8,45,beetroot]:
       Value: 1.676625
+    shipment_to_shops[M2,S8,45,cabbage]:
+      Value: 1.234115
     shipment_to_shops[M2,S8,46,beetroot]:
       Value: 1.684615
     shipment_to_shops[M2,S8,46,cabbage]:
       Value: 1.23114
-    shipment_to_shops[M2,S8,46,potato]:
-      Value: 1.268115
     shipment_to_shops[M2,S8,47,beetroot]:
       Value: 1.70714
+    shipment_to_shops[M2,S8,47,cabbage]:
+      Value: 1.21788
     shipment_to_shops[M2,S8,48,beetroot]:
       Value: 1.706035
     shipment_to_shops[M2,S8,48,cabbage]:
       Value: 1.21788
     shipment_to_shops[M2,S8,49,beetroot]:
       Value: 1.719125
+    shipment_to_shops[M2,S8,49,cabbage]:
+      Value: 1.20275
+    shipment_to_shops[M2,S8,5,beetroot]:
+      Value: 1.89329
     shipment_to_shops[M2,S8,50,beetroot]:
-      Value: 0.58596489
+      Value: 1.72516
+    shipment_to_shops[M2,S8,50,cabbage]:
+      Value: 1.19782
     shipment_to_shops[M2,S8,51,beetroot]:
       Value: 1.764005
-    shipment_to_shops[M2,S8,52,cabbage]:
-      Value: 1.183625
+    shipment_to_shops[M2,S8,51,cabbage]:
+      Value: 1.180565
     shipment_to_shops[M2,S8,6,beetroot]:
-      Value: 0.93908
-    shipment_to_shops[M2,S8,6,potato]:
-      Value: 0.91966813
+      Value: 1.885725
     shipment_to_shops[M2,S8,7,beetroot]:
-      Value: 1.4236225
+      Value: 1.896945
     shipment_to_shops[M2,S8,8,beetroot]:
-      Value: 1.6610487
-    shipment_to_shops[M2,S8,8,cabbage]:
-      Value: 0.43452
+      Value: 1.89771
     shipment_to_shops[M2,S8,9,beetroot]:
-      Value: 1.9920494
-    shipment_to_shops[M3,S5,1,beetroot]:
-      Value: 1.727455
-    shipment_to_shops[M3,S5,20,beetroot]:
-      Value: 1.7130774
-    shipment_to_shops[M3,S5,21,beetroot]:
-      Value: 1.7117662
-    shipment_to_shops[M3,S5,24,beetroot]:
-      Value: 1.6619564
-    shipment_to_shops[M3,S5,26,beetroot]:
-      Value: 1.6056803
-    shipment_to_shops[M3,S5,28,beetroot]:
-      Value: 1.5978588
-    shipment_to_shops[M3,S5,32,beetroot]:
-      Value: 1.5138465
+      Value: 2.11038
+    shipment_to_shops[M3,S5,40,beetroot]:
+      Value: 0.545304999999666
     shipment_to_shops[M3,S5,41,beetroot]:
       Value: 1.51385
     shipment_to_shops[M3,S5,42,beetroot]:
-      Value: 0.23043436
+      Value: 1.53425
+    shipment_to_shops[M3,S5,43,beetroot]:
+      Value: 1.56893
     shipment_to_shops[M3,S5,44,beetroot]:
       Value: 1.547
     shipment_to_shops[M3,S5,45,beetroot]:
       Value: 1.597915
+    shipment_to_shops[M3,S5,46,beetroot]:
+      Value: 1.57029
+    shipment_to_shops[M3,S5,47,beetroot]:
+      Value: 1.605905
+    shipment_to_shops[M3,S5,48,beetroot]:
+      Value: 1.62367
+    shipment_to_shops[M3,S5,49,beetroot]:
+      Value: 1.662855
+    shipment_to_shops[M3,S5,50,beetroot]:
+      Value: 1.65087
     shipment_to_shops[M3,S5,51,beetroot]:
       Value: 1.69575
     shipment_to_shops[M3,S6,1,beetroot]:
@@ -3040,6 +3118,8 @@ Solution:
       Value: 3.04929
     shipment_to_shops[M3,S6,10,beetroot]:
       Value: 1.65512
+    shipment_to_shops[M3,S6,10,cabbage]:
+      Value: 1.16263
     shipment_to_shops[M3,S6,10,potato]:
       Value: 2.638995
     shipment_to_shops[M3,S6,11,beetroot]:
@@ -3050,6 +3130,8 @@ Solution:
       Value: 2.8968
     shipment_to_shops[M3,S6,12,beetroot]:
       Value: 1.60582
+    shipment_to_shops[M3,S6,12,cabbage]:
+      Value: 1.46064
     shipment_to_shops[M3,S6,12,potato]:
       Value: 2.812905
     shipment_to_shops[M3,S6,13,beetroot]:
@@ -3060,32 +3142,44 @@ Solution:
       Value: 3.025575
     shipment_to_shops[M3,S6,14,beetroot]:
       Value: 1.545895
+    shipment_to_shops[M3,S6,14,cabbage]:
+      Value: 1.53220999999906
     shipment_to_shops[M3,S6,14,potato]:
       Value: 3.01597
     shipment_to_shops[M3,S6,15,beetroot]:
       Value: 1.47186
+    shipment_to_shops[M3,S6,15,cabbage]:
+      Value: 1.541475
     shipment_to_shops[M3,S6,15,potato]:
       Value: 3.104625
     shipment_to_shops[M3,S6,16,beetroot]:
       Value: 1.49124
+    shipment_to_shops[M3,S6,16,cabbage]:
+      Value: 1.554225
     shipment_to_shops[M3,S6,16,potato]:
       Value: 3.04929
     shipment_to_shops[M3,S6,17,beetroot]:
       Value: 1.441685
+    shipment_to_shops[M3,S6,17,cabbage]:
+      Value: 1.569015
     shipment_to_shops[M3,S6,17,potato]:
       Value: 3.132845
     shipment_to_shops[M3,S6,18,beetroot]:
       Value: 1.45027
     shipment_to_shops[M3,S6,18,cabbage]:
-      Value: 1.59052
+      Value: 1.59052000000001
     shipment_to_shops[M3,S6,18,potato]:
       Value: 3.146615
     shipment_to_shops[M3,S6,19,beetroot]:
       Value: 1.411595
+    shipment_to_shops[M3,S6,19,cabbage]:
+      Value: 1.61007
     shipment_to_shops[M3,S6,19,potato]:
       Value: 3.22677
     shipment_to_shops[M3,S6,2,beetroot]:
       Value: 1.411595
+    shipment_to_shops[M3,S6,2,cabbage]:
+      Value: 1.541475
     shipment_to_shops[M3,S6,2,potato]:
       Value: 3.104625
     shipment_to_shops[M3,S6,20,beetroot]:
@@ -3096,6 +3190,8 @@ Solution:
       Value: 3.231955
     shipment_to_shops[M3,S6,21,beetroot]:
       Value: 1.39689
+    shipment_to_shops[M3,S6,21,cabbage]:
+      Value: 1.68266
     shipment_to_shops[M3,S6,21,potato]:
       Value: 3.33472
     shipment_to_shops[M3,S6,22,beetroot]:
@@ -3106,10 +3202,14 @@ Solution:
       Value: 3.253375
     shipment_to_shops[M3,S6,23,beetroot]:
       Value: 1.36493
+    shipment_to_shops[M3,S6,23,cabbage]:
+      Value: 1.70068
     shipment_to_shops[M3,S6,23,potato]:
       Value: 3.359625
     shipment_to_shops[M3,S6,24,beetroot]:
       Value: 1.369265
+    shipment_to_shops[M3,S6,24,cabbage]:
+      Value: 1.73502
     shipment_to_shops[M3,S6,24,potato]:
       Value: 3.38028
     shipment_to_shops[M3,S6,25,beetroot]:
@@ -3121,7 +3221,7 @@ Solution:
     shipment_to_shops[M3,S6,26,beetroot]:
       Value: 1.33858
     shipment_to_shops[M3,S6,26,cabbage]:
-      Value: 1.77667
+      Value: 0.405275000001132
     shipment_to_shops[M3,S6,26,potato]:
       Value: 3.393115
     shipment_to_shops[M3,S6,27,beetroot]:
@@ -3138,12 +3238,12 @@ Solution:
       Value: 3.628055
     shipment_to_shops[M3,S6,3,beetroot]:
       Value: 1.45027
+    shipment_to_shops[M3,S6,3,cabbage]:
+      Value: 1.53221
     shipment_to_shops[M3,S6,3,potato]:
       Value: 3.01597
     shipment_to_shops[M3,S6,30,beetroot]:
       Value: 1.305005
-    shipment_to_shops[M3,S6,30,cabbage]:
-      Value: 1.814495
     shipment_to_shops[M3,S6,30,potato]:
       Value: 3.56813
     shipment_to_shops[M3,S6,31,beetroot]:
@@ -3152,8 +3252,6 @@ Solution:
       Value: 3.72334
     shipment_to_shops[M3,S6,32,beetroot]:
       Value: 1.294975
-    shipment_to_shops[M3,S6,32,cabbage]:
-      Value: 1.897285
     shipment_to_shops[M3,S6,32,potato]:
       Value: 3.714585
     shipment_to_shops[M3,S6,33,beetroot]:
@@ -3162,8 +3260,6 @@ Solution:
       Value: 3.77094
     shipment_to_shops[M3,S6,34,beetroot]:
       Value: 1.17674
-    shipment_to_shops[M3,S6,34,cabbage]:
-      Value: 2.028355
     shipment_to_shops[M3,S6,34,potato]:
       Value: 3.848375
     shipment_to_shops[M3,S6,35,beetroot]:
@@ -3172,8 +3268,6 @@ Solution:
       Value: 3.848375
     shipment_to_shops[M3,S6,36,beetroot]:
       Value: 1.076185
-    shipment_to_shops[M3,S6,36,cabbage]:
-      Value: 2.11548
     shipment_to_shops[M3,S6,36,potato]:
       Value: 3.77094
     shipment_to_shops[M3,S6,37,beetroot]:
@@ -3196,8 +3290,6 @@ Solution:
       Value: 3.025575
     shipment_to_shops[M3,S6,40,beetroot]:
       Value: 1.20632
-    shipment_to_shops[M3,S6,40,cabbage]:
-      Value: 1.806335
     shipment_to_shops[M3,S6,40,potato]:
       Value: 3.628055
     shipment_to_shops[M3,S6,41,beetroot]:
@@ -3218,14 +3310,10 @@ Solution:
       Value: 3.41445
     shipment_to_shops[M3,S6,45,beetroot]:
       Value: 1.334075
-    shipment_to_shops[M3,S6,45,cabbage]:
-      Value: 1.73502
     shipment_to_shops[M3,S6,45,potato]:
       Value: 3.38028
     shipment_to_shops[M3,S6,46,beetroot]:
       Value: 1.332545
-    shipment_to_shops[M3,S6,46,cabbage]:
-      Value: 1.70068
     shipment_to_shops[M3,S6,46,potato]:
       Value: 3.359625
     shipment_to_shops[M3,S6,47,beetroot]:
@@ -3234,18 +3322,16 @@ Solution:
       Value: 3.253375
     shipment_to_shops[M3,S6,48,beetroot]:
       Value: 1.347845
-    shipment_to_shops[M3,S6,48,cabbage]:
-      Value: 1.68266
     shipment_to_shops[M3,S6,48,potato]:
       Value: 3.33472
     shipment_to_shops[M3,S6,49,beetroot]:
       Value: 1.369265
-    shipment_to_shops[M3,S6,49,cabbage]:
-      Value: 1.653505
     shipment_to_shops[M3,S6,49,potato]:
       Value: 3.231955
     shipment_to_shops[M3,S6,5,beetroot]:
       Value: 1.49124
+    shipment_to_shops[M3,S6,5,cabbage]:
+      Value: 1.46064
     shipment_to_shops[M3,S6,5,potato]:
       Value: 2.812905
     shipment_to_shops[M3,S6,50,beetroot]:
@@ -3254,14 +3340,10 @@ Solution:
       Value: 3.22677
     shipment_to_shops[M3,S6,51,beetroot]:
       Value: 1.394425
-    shipment_to_shops[M3,S6,51,cabbage]:
-      Value: 1.59052
     shipment_to_shops[M3,S6,51,potato]:
       Value: 3.146615
     shipment_to_shops[M3,S6,52,beetroot]:
       Value: 1.39689
-    shipment_to_shops[M3,S6,52,cabbage]:
-      Value: 1.569015
     shipment_to_shops[M3,S6,52,potato]:
       Value: 3.132845
     shipment_to_shops[M3,S6,6,beetroot]:
@@ -3279,7 +3361,7 @@ Solution:
     shipment_to_shops[M3,S6,8,beetroot]:
       Value: 1.551505
     shipment_to_shops[M3,S6,8,cabbage]:
-      Value: 0.44242
+      Value: 1.324215
     shipment_to_shops[M3,S6,8,potato]:
       Value: 2.586295
     shipment_to_shops[M3,S6,9,beetroot]:
@@ -3659,15 +3741,13 @@ Solution:
     shipment_to_shops[M3,S7,51,beetroot]:
       Value: 1.120385
     shipment_to_shops[M3,S7,51,cabbage]:
-      Value: 1.34215
+      Value: 2.69637
     shipment_to_shops[M3,S7,51,carrot]:
       Value: 0.69445
     shipment_to_shops[M3,S7,51,potato]:
       Value: 1.819085
     shipment_to_shops[M3,S7,52,beetroot]:
       Value: 1.143845
-    shipment_to_shops[M3,S7,52,cabbage]:
-      Value: 1.35422
     shipment_to_shops[M3,S7,52,carrot]:
       Value: 0.68833
     shipment_to_shops[M3,S7,52,potato]:
@@ -4155,1407 +4235,15 @@ Solution:
     shipment_to_warehouses[P6,M1,beetroot]:
       Value: 15
     shipment_to_warehouses[P6,M1,cabbage]:
-      Value: 7.62694
+      Value: 7.62693999999831
     shipment_to_warehouses[P6,M1,potato]:
       Value: 35.08054
     shipment_to_warehouses[P6,M3,cabbage]:
       Value: 114.37306
     shipment_to_warehouses[P6,M3,carrot]:
-      Value: 63.70748
+      Value: 63.7074799999998
     shipment_to_warehouses[P6,M3,potato]:
       Value: 321.91946
-    shop_leftovers[S1,10,beetroot]:
-      Value: 1.93239
-    shop_leftovers[S1,10,carrot]:
-      Value: 0.95659
-    shop_leftovers[S1,11,beetroot]:
-      Value: 0.966195
-    shop_leftovers[S1,11,carrot]:
-      Value: 0.478295
-    shop_leftovers[S1,12,beetroot]:
-      Value: 0.4830975
-    shop_leftovers[S1,12,cabbage]:
-      Value: 2.36283
-    shop_leftovers[S1,12,carrot]:
-      Value: 0.2391475
-    shop_leftovers[S1,13,beetroot]:
-      Value: 0.24154875
-    shop_leftovers[S1,13,cabbage]:
-      Value: 1.181415
-    shop_leftovers[S1,13,carrot]:
-      Value: 0.11957375
-    shop_leftovers[S1,14,beetroot]:
-      Value: 0.12077437
-    shop_leftovers[S1,14,cabbage]:
-      Value: 0.5907075
-    shop_leftovers[S1,14,carrot]:
-      Value: 0.059786875
-    shop_leftovers[S1,15,beetroot]:
-      Value: 0.060387188
-    shop_leftovers[S1,15,cabbage]:
-      Value: 2.38697
-    shop_leftovers[S1,15,carrot]:
-      Value: 0.029893437
-    shop_leftovers[S1,16,beetroot]:
-      Value: 0.030193594
-    shop_leftovers[S1,16,cabbage]:
-      Value: 1.193485
-    shop_leftovers[S1,16,carrot]:
-      Value: 1.64339
-    shop_leftovers[S1,17,beetroot]:
-      Value: 0.015096797
-    shop_leftovers[S1,17,cabbage]:
-      Value: 0.5967425
-    shop_leftovers[S1,17,carrot]:
-      Value: 0.821695
-    shop_leftovers[S1,18,beetroot]:
-      Value: 0.0075483984
-    shop_leftovers[S1,18,cabbage]:
-      Value: 0.29837125
-    shop_leftovers[S1,18,carrot]:
-      Value: 0.4108475
-    shop_leftovers[S1,19,beetroot]:
-      Value: 0.0037741992
-    shop_leftovers[S1,19,cabbage]:
-      Value: 0.14918562
-    shop_leftovers[S1,19,carrot]:
-      Value: 0.20542375
-    shop_leftovers[S1,20,beetroot]:
-      Value: 0.0018870996
-    shop_leftovers[S1,20,cabbage]:
-      Value: 0.074592812
-    shop_leftovers[S1,20,carrot]:
-      Value: 0.10271188
-    shop_leftovers[S1,21,beetroot]:
-      Value: 0.0009435498
-    shop_leftovers[S1,21,cabbage]:
-      Value: 0.037296406
-    shop_leftovers[S1,21,carrot]:
-      Value: 0.051355938
-    shop_leftovers[S1,22,beetroot]:
-      Value: 0.0004717749
-    shop_leftovers[S1,22,cabbage]:
-      Value: 0.018648203
-    shop_leftovers[S1,22,carrot]:
-      Value: 0.025677969
-    shop_leftovers[S1,23,beetroot]:
-      Value: 0.00023588745
-    shop_leftovers[S1,23,cabbage]:
-      Value: 0.0093241016
-    shop_leftovers[S1,23,carrot]:
-      Value: 0.012838984
-    shop_leftovers[S1,24,beetroot]:
-      Value: 0.00011794373
-    shop_leftovers[S1,24,cabbage]:
-      Value: 0.0046620508
-    shop_leftovers[S1,24,carrot]:
-      Value: 0.0064194922
-    shop_leftovers[S1,25,beetroot]:
-      Value: 5.8971863e-05
-    shop_leftovers[S1,25,cabbage]:
-      Value: 0.0023310254
-    shop_leftovers[S1,25,carrot]:
-      Value: 0.0032097461
-    shop_leftovers[S1,26,beetroot]:
-      Value: 2.9485931e-05
-    shop_leftovers[S1,26,cabbage]:
-      Value: 0.0011655127
-    shop_leftovers[S1,26,carrot]:
-      Value: 0.001604873
-    shop_leftovers[S1,27,beetroot]:
-      Value: 1.4742966e-05
-    shop_leftovers[S1,27,cabbage]:
-      Value: 0.00058275635
-    shop_leftovers[S1,27,carrot]:
-      Value: 0.00080243652
-    shop_leftovers[S1,28,beetroot]:
-      Value: 7.3714828e-06
-    shop_leftovers[S1,28,cabbage]:
-      Value: 0.00029137817
-    shop_leftovers[S1,28,carrot]:
-      Value: 0.00040121826
-    shop_leftovers[S1,29,beetroot]:
-      Value: 3.6857414e-06
-    shop_leftovers[S1,29,cabbage]:
-      Value: 0.00014568909
-    shop_leftovers[S1,29,carrot]:
-      Value: 0.00020060913
-    shop_leftovers[S1,30,beetroot]:
-      Value: 1.8428707e-06
-    shop_leftovers[S1,30,cabbage]:
-      Value: 7.2844543e-05
-    shop_leftovers[S1,30,carrot]:
-      Value: 0.00010030457
-    shop_leftovers[S1,31,beetroot]:
-      Value: 9.2143536e-07
-    shop_leftovers[S1,31,cabbage]:
-      Value: 3.6422272e-05
-    shop_leftovers[S1,31,carrot]:
-      Value: 5.0152283e-05
-    shop_leftovers[S1,32,beetroot]:
-      Value: 4.6071768e-07
-    shop_leftovers[S1,32,cabbage]:
-      Value: 1.8211136e-05
-    shop_leftovers[S1,32,carrot]:
-      Value: 2.5076141e-05
-    shop_leftovers[S1,33,beetroot]:
-      Value: 2.3035884e-07
-    shop_leftovers[S1,33,cabbage]:
-      Value: 9.1055679e-06
-    shop_leftovers[S1,33,carrot]:
-      Value: 1.2538071e-05
-    shop_leftovers[S1,34,beetroot]:
-      Value: 1.1517942e-07
-    shop_leftovers[S1,34,cabbage]:
-      Value: 4.552784e-06
-    shop_leftovers[S1,34,carrot]:
-      Value: 6.2690353e-06
-    shop_leftovers[S1,35,beetroot]:
-      Value: 5.758971e-08
-    shop_leftovers[S1,35,cabbage]:
-      Value: 2.276392e-06
-    shop_leftovers[S1,35,carrot]:
-      Value: 3.1345177e-06
-    shop_leftovers[S1,36,cabbage]:
-      Value: 1.138196e-06
-    shop_leftovers[S1,36,carrot]:
-      Value: 1.5672588e-06
-    shop_leftovers[S1,37,cabbage]:
-      Value: 5.69098e-07
-    shop_leftovers[S1,37,carrot]:
-      Value: 7.8362942e-07
-    shop_leftovers[S1,38,cabbage]:
-      Value: 2.84549e-07
-    shop_leftovers[S1,38,carrot]:
-      Value: 3.9181471e-07
-    shop_leftovers[S1,39,cabbage]:
-      Value: 1.422745e-07
-    shop_leftovers[S1,39,carrot]:
-      Value: 1.9590735e-07
-    shop_leftovers[S1,40,cabbage]:
-      Value: 7.113725e-08
-    shop_leftovers[S1,40,carrot]:
-      Value: 9.7953677e-08
-    shop_leftovers[S1,41,cabbage]:
-      Value: 3.5568625e-08
-    shop_leftovers[S1,41,carrot]:
-      Value: 4.8976839e-08
-    shop_leftovers[S1,42,cabbage]:
-      Value: 1.7784312e-08
-    shop_leftovers[S1,42,carrot]:
-      Value: 2.4488419e-08
-    shop_leftovers[S1,43,cabbage]:
-      Value: 8.8921561e-09
-    shop_leftovers[S1,43,carrot]:
-      Value: 1.224421e-08
-    shop_leftovers[S1,44,cabbage]:
-      Value: 4.4460782e-09
-    shop_leftovers[S1,44,carrot]:
-      Value: 6.1221048e-09
-    shop_leftovers[S1,45,cabbage]:
-      Value: 2.2230391e-09
-    shop_leftovers[S1,45,carrot]:
-      Value: 3.0610524e-09
-    shop_leftovers[S1,46,cabbage]:
-      Value: 1.1115195e-09
-    shop_leftovers[S1,46,carrot]:
-      Value: 1.5305262e-09
-    shop_leftovers[S1,47,cabbage]:
-      Value: 5.5575966e-10
-    shop_leftovers[S1,47,carrot]:
-      Value: 7.6526308e-10
-    shop_leftovers[S1,48,cabbage]:
-      Value: 2.7787994e-10
-    shop_leftovers[S1,48,carrot]:
-      Value: 3.8263159e-10
-    shop_leftovers[S1,49,cabbage]:
-      Value: 1.3893997e-10
-    shop_leftovers[S1,49,carrot]:
-      Value: 1.9131574e-10
-    shop_leftovers[S1,50,cabbage]:
-      Value: 6.9469985e-11
-    shop_leftovers[S1,50,carrot]:
-      Value: 9.5657926e-11
-    shop_leftovers[S1,51,cabbage]:
-      Value: 3.4734882e-11
-    shop_leftovers[S1,51,carrot]:
-      Value: 4.7828963e-11
-    shop_leftovers[S1,52,cabbage]:
-      Value: 1.7367441e-11
-    shop_leftovers[S1,52,carrot]:
-      Value: 2.3914482e-11
-    shop_leftovers[S1,6,beetroot]:
-      Value: 1.81339
-    shop_leftovers[S1,7,beetroot]:
-      Value: 0.906695
-    shop_leftovers[S1,8,beetroot]:
-      Value: 0.4533475
-    shop_leftovers[S1,8,carrot]:
-      Value: 2.786215
-    shop_leftovers[S1,9,beetroot]:
-      Value: 0.22667375
-    shop_leftovers[S1,9,carrot]:
-      Value: 1.91318
-    shop_leftovers[S10,10,beetroot]:
-      Value: 0.965175
-    shop_leftovers[S10,10,potato]:
-      Value: 0.61149
-    shop_leftovers[S10,11,beetroot]:
-      Value: 0.4825875
-    shop_leftovers[S10,11,potato]:
-      Value: 0.305745
-    shop_leftovers[S10,12,beetroot]:
-      Value: 0.24129375
-    shop_leftovers[S10,12,potato]:
-      Value: 0.1528725
-    shop_leftovers[S10,13,beetroot]:
-      Value: 0.12064687
-    shop_leftovers[S10,13,potato]:
-      Value: 0.07643625
-    shop_leftovers[S10,14,beetroot]:
-      Value: 0.060323437
-    shop_leftovers[S10,14,potato]:
-      Value: 0.038218125
-    shop_leftovers[S10,15,beetroot]:
-      Value: 0.030161719
-    shop_leftovers[S10,15,potato]:
-      Value: 0.019109063
-    shop_leftovers[S10,16,beetroot]:
-      Value: 0.015080859
-    shop_leftovers[S10,16,potato]:
-      Value: 0.0095545313
-    shop_leftovers[S10,17,beetroot]:
-      Value: 0.0075404297
-    shop_leftovers[S10,17,potato]:
-      Value: 0.0047772656
-    shop_leftovers[S10,18,beetroot]:
-      Value: 0.0037702148
-    shop_leftovers[S10,18,potato]:
-      Value: 0.0023886328
-    shop_leftovers[S10,19,beetroot]:
-      Value: 0.0018851074
-    shop_leftovers[S10,19,cabbage]:
-      Value: 2.0655
-    shop_leftovers[S10,19,potato]:
-      Value: 0.0011943164
-    shop_leftovers[S10,20,beetroot]:
-      Value: 0.00094255371
-    shop_leftovers[S10,20,cabbage]:
-      Value: 1.03275
-    shop_leftovers[S10,20,potato]:
-      Value: 0.0005971582
-    shop_leftovers[S10,21,beetroot]:
-      Value: 0.00047127686
-    shop_leftovers[S10,21,cabbage]:
-      Value: 0.516375
-    shop_leftovers[S10,21,potato]:
-      Value: 0.0002985791
-    shop_leftovers[S10,22,beetroot]:
-      Value: 0.00023563843
-    shop_leftovers[S10,22,cabbage]:
-      Value: 0.2581875
-    shop_leftovers[S10,22,potato]:
-      Value: 0.00014928955
-    shop_leftovers[S10,23,beetroot]:
-      Value: 0.00011781921
-    shop_leftovers[S10,23,cabbage]:
-      Value: 0.12909375
-    shop_leftovers[S10,23,potato]:
-      Value: 7.4644775e-05
-    shop_leftovers[S10,24,beetroot]:
-      Value: 5.8909607e-05
-    shop_leftovers[S10,24,cabbage]:
-      Value: 0.064546875
-    shop_leftovers[S10,24,potato]:
-      Value: 3.7322388e-05
-    shop_leftovers[S10,25,beetroot]:
-      Value: 2.9454803e-05
-    shop_leftovers[S10,25,cabbage]:
-      Value: 0.032273438
-    shop_leftovers[S10,25,potato]:
-      Value: 1.8661194e-05
-    shop_leftovers[S10,26,beetroot]:
-      Value: 1.4727402e-05
-    shop_leftovers[S10,26,cabbage]:
-      Value: 0.016136719
-    shop_leftovers[S10,26,potato]:
-      Value: 9.3305969e-06
-    shop_leftovers[S10,27,beetroot]:
-      Value: 7.3637009e-06
-    shop_leftovers[S10,27,cabbage]:
-      Value: 0.0080683594
-    shop_leftovers[S10,27,potato]:
-      Value: 4.6652985e-06
-    shop_leftovers[S10,28,beetroot]:
-      Value: 3.6818504e-06
-    shop_leftovers[S10,28,cabbage]:
-      Value: 0.0040341797
-    shop_leftovers[S10,28,potato]:
-      Value: 2.3326492e-06
-    shop_leftovers[S10,29,beetroot]:
-      Value: 1.8409252e-06
-    shop_leftovers[S10,29,cabbage]:
-      Value: 0.0020170898
-    shop_leftovers[S10,29,potato]:
-      Value: 1.1663246e-06
-    shop_leftovers[S10,30,beetroot]:
-      Value: 9.2046261e-07
-    shop_leftovers[S10,30,cabbage]:
-      Value: 0.0010085449
-    shop_leftovers[S10,30,potato]:
-      Value: 5.8316231e-07
-    shop_leftovers[S10,31,beetroot]:
-      Value: 4.602313e-07
-    shop_leftovers[S10,31,cabbage]:
-      Value: 0.00050427246
-    shop_leftovers[S10,31,potato]:
-      Value: 2.9158115e-07
-    shop_leftovers[S10,32,beetroot]:
-      Value: 2.3011565e-07
-    shop_leftovers[S10,32,cabbage]:
-      Value: 0.00025213623
-    shop_leftovers[S10,32,potato]:
-      Value: 1.4579058e-07
-    shop_leftovers[S10,33,beetroot]:
-      Value: 1.1505783e-07
-    shop_leftovers[S10,33,cabbage]:
-      Value: 0.00012606812
-    shop_leftovers[S10,33,potato]:
-      Value: 7.2895288e-08
-    shop_leftovers[S10,34,beetroot]:
-      Value: 5.7528913e-08
-    shop_leftovers[S10,34,cabbage]:
-      Value: 6.3034058e-05
-    shop_leftovers[S10,34,potato]:
-      Value: 3.6447644e-08
-    shop_leftovers[S10,35,cabbage]:
-      Value: 3.1517029e-05
-    shop_leftovers[S10,35,potato]:
-      Value: 1.8223822e-08
-    shop_leftovers[S10,36,cabbage]:
-      Value: 1.5758514e-05
-    shop_leftovers[S10,36,potato]:
-      Value: 9.111911e-09
-    shop_leftovers[S10,37,cabbage]:
-      Value: 7.8792572e-06
-    shop_leftovers[S10,37,potato]:
-      Value: 4.5559556e-09
-    shop_leftovers[S10,38,cabbage]:
-      Value: 3.9396286e-06
-    shop_leftovers[S10,38,potato]:
-      Value: 2.2779778e-09
-    shop_leftovers[S10,39,cabbage]:
-      Value: 1.9698143e-06
-    shop_leftovers[S10,39,potato]:
-      Value: 1.1389889e-09
-    shop_leftovers[S10,4,potato]:
-      Value: 2.48285
-    shop_leftovers[S10,40,cabbage]:
-      Value: 9.8490715e-07
-    shop_leftovers[S10,40,potato]:
-      Value: 5.6949445e-10
-    shop_leftovers[S10,41,cabbage]:
-      Value: 4.9245358e-07
-    shop_leftovers[S10,41,potato]:
-      Value: 2.8474711e-10
-    shop_leftovers[S10,42,cabbage]:
-      Value: 2.4622679e-07
-    shop_leftovers[S10,42,potato]:
-      Value: 1.4237367e-10
-    shop_leftovers[S10,43,cabbage]:
-      Value: 1.2311339e-07
-    shop_leftovers[S10,43,potato]:
-      Value: 7.1186834e-11
-    shop_leftovers[S10,44,cabbage]:
-      Value: 6.1556697e-08
-    shop_leftovers[S10,44,potato]:
-      Value: 3.5593528e-11
-    shop_leftovers[S10,45,cabbage]:
-      Value: 3.0778349e-08
-    shop_leftovers[S10,45,potato]:
-      Value: 1.7796653e-11
-    shop_leftovers[S10,46,cabbage]:
-      Value: 1.5389174e-08
-    shop_leftovers[S10,46,potato]:
-      Value: 8.8982155e-12
-    shop_leftovers[S10,47,cabbage]:
-      Value: 7.6945872e-09
-    shop_leftovers[S10,47,potato]:
-      Value: 4.4491077e-12
-    shop_leftovers[S10,48,cabbage]:
-      Value: 3.8472936e-09
-    shop_leftovers[S10,48,potato]:
-      Value: 2.2246649e-12
-    shop_leftovers[S10,49,cabbage]:
-      Value: 1.9236468e-09
-    shop_leftovers[S10,49,potato]:
-      Value: 1.1122214e-12
-    shop_leftovers[S10,5,potato]:
-      Value: 1.241425
-    shop_leftovers[S10,50,cabbage]:
-      Value: 9.6182329e-10
-    shop_leftovers[S10,50,potato]:
-      Value: 5.5599969e-13
-    shop_leftovers[S10,51,cabbage]:
-      Value: 4.8091175e-10
-    shop_leftovers[S10,51,potato]:
-      Value: 2.7799985e-13
-    shop_leftovers[S10,52,cabbage]:
-      Value: 2.4045588e-10
-    shop_leftovers[S10,52,potato]:
-      Value: 1.3899992e-13
-    shop_leftovers[S10,6,potato]:
-      Value: 0.6207125
-    shop_leftovers[S10,7,beetroot]:
-      Value: 5.552115
-    shop_leftovers[S10,7,potato]:
-      Value: 0.31035625
-    shop_leftovers[S10,8,beetroot]:
-      Value: 3.8607
-    shop_leftovers[S10,8,potato]:
-      Value: 2.44596
-    shop_leftovers[S10,9,beetroot]:
-      Value: 1.93035
-    shop_leftovers[S10,9,potato]:
-      Value: 1.22298
-    shop_leftovers[S4,1,beetroot]:
-      Value: 3.47259
-    shop_leftovers[S4,10,beetroot]:
-      Value: 0.11505281
-    shop_leftovers[S4,10,cabbage]:
-      Value: 0.78234
-    shop_leftovers[S4,10,carrot]:
-      Value: 2.86025
-    shop_leftovers[S4,10,potato]:
-      Value: 1.94803
-    shop_leftovers[S4,11,beetroot]:
-      Value: 6.01052
-    shop_leftovers[S4,11,cabbage]:
-      Value: 0.39117
-    shop_leftovers[S4,11,carrot]:
-      Value: 1.430125
-    shop_leftovers[S4,11,potato]:
-      Value: 0.974015
-    shop_leftovers[S4,12,beetroot]:
-      Value: 3.93278
-    shop_leftovers[S4,12,cabbage]:
-      Value: 0.195585
-    shop_leftovers[S4,12,carrot]:
-      Value: 0.7150625
-    shop_leftovers[S4,12,potato]:
-      Value: 4.1888
-    shop_leftovers[S4,13,beetroot]:
-      Value: 1.96639
-    shop_leftovers[S4,13,cabbage]:
-      Value: 0.0977925
-    shop_leftovers[S4,13,carrot]:
-      Value: 0.35753125
-    shop_leftovers[S4,13,potato]:
-      Value: 2.0944
-    shop_leftovers[S4,14,beetroot]:
-      Value: 0.983195
-    shop_leftovers[S4,14,cabbage]:
-      Value: 0.04889625
-    shop_leftovers[S4,14,carrot]:
-      Value: 0.17876563
-    shop_leftovers[S4,14,potato]:
-      Value: 1.0472
-    shop_leftovers[S4,15,beetroot]:
-      Value: 0.4915975
-    shop_leftovers[S4,15,cabbage]:
-      Value: 0.024448125
-    shop_leftovers[S4,15,carrot]:
-      Value: 0.089382813
-    shop_leftovers[S4,15,potato]:
-      Value: 0.5236
-    shop_leftovers[S4,16,beetroot]:
-      Value: 0.24579875
-    shop_leftovers[S4,16,cabbage]:
-      Value: 0.012224062
-    shop_leftovers[S4,16,carrot]:
-      Value: 0.044691406
-    shop_leftovers[S4,16,potato]:
-      Value: 4.44958
-    shop_leftovers[S4,17,beetroot]:
-      Value: 3.54892
-    shop_leftovers[S4,17,cabbage]:
-      Value: 0.0061120313
-    shop_leftovers[S4,17,carrot]:
-      Value: 0.022345703
-    shop_leftovers[S4,17,potato]:
-      Value: 2.22479
-    shop_leftovers[S4,18,beetroot]:
-      Value: 1.77446
-    shop_leftovers[S4,18,cabbage]:
-      Value: 8.066585
-    shop_leftovers[S4,18,carrot]:
-      Value: 0.011172852
-    shop_leftovers[S4,18,potato]:
-      Value: 1.112395
-    shop_leftovers[S4,19,beetroot]:
-      Value: 3.49214
-    shop_leftovers[S4,19,cabbage]:
-      Value: 6.058715
-    shop_leftovers[S4,19,carrot]:
-      Value: 0.0055864258
-    shop_leftovers[S4,19,potato]:
-      Value: 0.5561975
-    shop_leftovers[S4,2,beetroot]:
-      Value: 1.736295
-    shop_leftovers[S4,2,cabbage]:
-      Value: 3.73745
-    shop_leftovers[S4,20,beetroot]:
-      Value: 1.74607
-    shop_leftovers[S4,20,cabbage]:
-      Value: 4.04821
-    shop_leftovers[S4,20,carrot]:
-      Value: 0.0027932129
-    shop_leftovers[S4,20,potato]:
-      Value: 0.27809875
-    shop_leftovers[S4,21,beetroot]:
-      Value: 0.873035
-    shop_leftovers[S4,21,cabbage]:
-      Value: 2.024105
-    shop_leftovers[S4,21,carrot]:
-      Value: 0.0013966064
-    shop_leftovers[S4,21,potato]:
-      Value: 0.13904938
-    shop_leftovers[S4,22,beetroot]:
-      Value: 0.4365175
-    shop_leftovers[S4,22,cabbage]:
-      Value: 1.0120525
-    shop_leftovers[S4,22,carrot]:
-      Value: 0.00069830322
-    shop_leftovers[S4,22,potato]:
-      Value: 0.069524688
-    shop_leftovers[S4,23,beetroot]:
-      Value: 0.21825875
-    shop_leftovers[S4,23,cabbage]:
-      Value: 0.50602625
-    shop_leftovers[S4,23,carrot]:
-      Value: 0.00034915161
-    shop_leftovers[S4,23,potato]:
-      Value: 0.034762344
-    shop_leftovers[S4,24,beetroot]:
-      Value: 0.10912938
-    shop_leftovers[S4,24,cabbage]:
-      Value: 0.25301313
-    shop_leftovers[S4,24,carrot]:
-      Value: 0.00017457581
-    shop_leftovers[S4,24,potato]:
-      Value: 0.017381172
-    shop_leftovers[S4,25,beetroot]:
-      Value: 0.054564687
-    shop_leftovers[S4,25,cabbage]:
-      Value: 0.12650656
-    shop_leftovers[S4,25,carrot]:
-      Value: 8.7287903e-05
-    shop_leftovers[S4,25,potato]:
-      Value: 0.0086905859
-    shop_leftovers[S4,26,beetroot]:
-      Value: 0.027282344
-    shop_leftovers[S4,26,cabbage]:
-      Value: 0.063253281
-    shop_leftovers[S4,26,carrot]:
-      Value: 4.3643951e-05
-    shop_leftovers[S4,26,potato]:
-      Value: 0.004345293
-    shop_leftovers[S4,27,beetroot]:
-      Value: 0.013641172
-    shop_leftovers[S4,27,cabbage]:
-      Value: 0.031626641
-    shop_leftovers[S4,27,carrot]:
-      Value: 2.1821976e-05
-    shop_leftovers[S4,27,potato]:
-      Value: 0.0021726465
-    shop_leftovers[S4,28,beetroot]:
-      Value: 0.0068205859
-    shop_leftovers[S4,28,cabbage]:
-      Value: 0.01581332
-    shop_leftovers[S4,28,carrot]:
-      Value: 1.0910988e-05
-    shop_leftovers[S4,28,potato]:
-      Value: 0.0010863232
-    shop_leftovers[S4,29,beetroot]:
-      Value: 0.003410293
-    shop_leftovers[S4,29,cabbage]:
-      Value: 0.0079066602
-    shop_leftovers[S4,29,carrot]:
-      Value: 5.4554939e-06
-    shop_leftovers[S4,29,potato]:
-      Value: 0.00054316162
-    shop_leftovers[S4,3,beetroot]:
-      Value: 0.8681475
-    shop_leftovers[S4,3,cabbage]:
-      Value: 1.868725
-    shop_leftovers[S4,30,beetroot]:
-      Value: 0.0017051465
-    shop_leftovers[S4,30,cabbage]:
-      Value: 0.0039533301
-    shop_leftovers[S4,30,carrot]:
-      Value: 2.727747e-06
-    shop_leftovers[S4,30,potato]:
-      Value: 0.00027158081
-    shop_leftovers[S4,31,beetroot]:
-      Value: 0.00085257324
-    shop_leftovers[S4,31,cabbage]:
-      Value: 0.001976665
-    shop_leftovers[S4,31,carrot]:
-      Value: 1.3638735e-06
-    shop_leftovers[S4,31,potato]:
-      Value: 0.00013579041
-    shop_leftovers[S4,32,beetroot]:
-      Value: 0.00042628662
-    shop_leftovers[S4,32,cabbage]:
-      Value: 0.00098833252
-    shop_leftovers[S4,32,carrot]:
-      Value: 6.8193674e-07
-    shop_leftovers[S4,32,potato]:
-      Value: 6.7895203e-05
-    shop_leftovers[S4,33,beetroot]:
-      Value: 0.00021314331
-    shop_leftovers[S4,33,cabbage]:
-      Value: 0.00049416626
-    shop_leftovers[S4,33,carrot]:
-      Value: 3.4096837e-07
-    shop_leftovers[S4,33,potato]:
-      Value: 3.3947601e-05
-    shop_leftovers[S4,34,beetroot]:
-      Value: 0.00010657166
-    shop_leftovers[S4,34,cabbage]:
-      Value: 0.00024708313
-    shop_leftovers[S4,34,carrot]:
-      Value: 1.7048419e-07
-    shop_leftovers[S4,34,potato]:
-      Value: 1.6973801e-05
-    shop_leftovers[S4,35,beetroot]:
-      Value: 5.3285828e-05
-    shop_leftovers[S4,35,cabbage]:
-      Value: 0.00012354156
-    shop_leftovers[S4,35,carrot]:
-      Value: 8.5242093e-08
-    shop_leftovers[S4,35,potato]:
-      Value: 8.4869003e-06
-    shop_leftovers[S4,36,beetroot]:
-      Value: 2.6642914e-05
-    shop_leftovers[S4,36,cabbage]:
-      Value: 6.1770782e-05
-    shop_leftovers[S4,36,carrot]:
-      Value: 4.2621046e-08
-    shop_leftovers[S4,36,potato]:
-      Value: 4.2434502e-06
-    shop_leftovers[S4,37,beetroot]:
-      Value: 1.3321457e-05
-    shop_leftovers[S4,37,cabbage]:
-      Value: 3.0885391e-05
-    shop_leftovers[S4,37,carrot]:
-      Value: 2.1310523e-08
-    shop_leftovers[S4,37,potato]:
-      Value: 2.1217251e-06
-    shop_leftovers[S4,38,beetroot]:
-      Value: 6.6607285e-06
-    shop_leftovers[S4,38,cabbage]:
-      Value: 1.5442696e-05
-    shop_leftovers[S4,38,carrot]:
-      Value: 1.0655262e-08
-    shop_leftovers[S4,38,potato]:
-      Value: 1.0608625e-06
-    shop_leftovers[S4,39,beetroot]:
-      Value: 3.3303642e-06
-    shop_leftovers[S4,39,cabbage]:
-      Value: 7.7213478e-06
-    shop_leftovers[S4,39,carrot]:
-      Value: 5.3276308e-09
-    shop_leftovers[S4,39,potato]:
-      Value: 5.3043127e-07
-    shop_leftovers[S4,4,beetroot]:
-      Value: 0.43407375
-    shop_leftovers[S4,4,cabbage]:
-      Value: 0.9343625
-    shop_leftovers[S4,4,carrot]:
-      Value: 2.62939
-    shop_leftovers[S4,40,beetroot]:
-      Value: 1.6651821e-06
-    shop_leftovers[S4,40,cabbage]:
-      Value: 3.8606739e-06
-    shop_leftovers[S4,40,carrot]:
-      Value: 2.6638154e-09
-    shop_leftovers[S4,40,potato]:
-      Value: 2.6521564e-07
-    shop_leftovers[S4,41,beetroot]:
-      Value: 8.3259106e-07
-    shop_leftovers[S4,41,cabbage]:
-      Value: 1.930337e-06
-    shop_leftovers[S4,41,carrot]:
-      Value: 1.3319077e-09
-    shop_leftovers[S4,41,potato]:
-      Value: 1.3260782e-07
-    shop_leftovers[S4,42,beetroot]:
-      Value: 4.1629553e-07
-    shop_leftovers[S4,42,cabbage]:
-      Value: 9.6516848e-07
-    shop_leftovers[S4,42,carrot]:
-      Value: 6.6595385e-10
-    shop_leftovers[S4,42,potato]:
-      Value: 6.6303909e-08
-    shop_leftovers[S4,43,beetroot]:
-      Value: 2.0814776e-07
-    shop_leftovers[S4,43,cabbage]:
-      Value: 4.8258424e-07
-    shop_leftovers[S4,43,carrot]:
-      Value: 3.3297698e-10
-    shop_leftovers[S4,43,potato]:
-      Value: 3.3151955e-08
-    shop_leftovers[S4,44,beetroot]:
-      Value: 1.0407388e-07
-    shop_leftovers[S4,44,cabbage]:
-      Value: 2.4129212e-07
-    shop_leftovers[S4,44,carrot]:
-      Value: 1.6648849e-10
-    shop_leftovers[S4,44,potato]:
-      Value: 1.6575977e-08
-    shop_leftovers[S4,45,beetroot]:
-      Value: 5.2036941e-08
-    shop_leftovers[S4,45,cabbage]:
-      Value: 1.2064606e-07
-    shop_leftovers[S4,45,carrot]:
-      Value: 8.32443e-11
-    shop_leftovers[S4,45,potato]:
-      Value: 8.287989e-09
-    shop_leftovers[S4,46,beetroot]:
-      Value: 2.6018471e-08
-    shop_leftovers[S4,46,cabbage]:
-      Value: 6.032303e-08
-    shop_leftovers[S4,46,carrot]:
-      Value: 4.162215e-11
-    shop_leftovers[S4,46,potato]:
-      Value: 4.1439945e-09
-    shop_leftovers[S4,47,beetroot]:
-      Value: 1.3009235e-08
-    shop_leftovers[S4,47,cabbage]:
-      Value: 3.0161515e-08
-    shop_leftovers[S4,47,carrot]:
-      Value: 2.0811131e-11
-    shop_leftovers[S4,47,potato]:
-      Value: 2.0719972e-09
-    shop_leftovers[S4,48,beetroot]:
-      Value: 6.5046177e-09
-    shop_leftovers[S4,48,cabbage]:
-      Value: 1.5080757e-08
-    shop_leftovers[S4,48,carrot]:
-      Value: 1.0405565e-11
-    shop_leftovers[S4,48,potato]:
-      Value: 1.0359984e-09
-    shop_leftovers[S4,49,beetroot]:
-      Value: 3.2523089e-09
-    shop_leftovers[S4,49,cabbage]:
-      Value: 7.5403785e-09
-    shop_leftovers[S4,49,carrot]:
-      Value: 5.2027271e-12
-    shop_leftovers[S4,49,potato]:
-      Value: 5.1799942e-10
-    shop_leftovers[S4,5,beetroot]:
-      Value: 3.68169
-    shop_leftovers[S4,5,cabbage]:
-      Value: 0.46718125
-    shop_leftovers[S4,5,carrot]:
-      Value: 1.314695
-    shop_leftovers[S4,50,beetroot]:
-      Value: 1.6261544e-09
-    shop_leftovers[S4,50,cabbage]:
-      Value: 3.7701893e-09
-    shop_leftovers[S4,50,carrot]:
-      Value: 2.6013636e-12
-    shop_leftovers[S4,50,potato]:
-      Value: 2.5899949e-10
-    shop_leftovers[S4,51,beetroot]:
-      Value: 8.1307727e-10
-    shop_leftovers[S4,51,cabbage]:
-      Value: 1.8850946e-09
-    shop_leftovers[S4,51,carrot]:
-      Value: 1.3006263e-12
-    shop_leftovers[S4,51,potato]:
-      Value: 1.2949997e-10
-    shop_leftovers[S4,52,beetroot]:
-      Value: 4.0653869e-10
-    shop_leftovers[S4,52,cabbage]:
-      Value: 9.4254737e-10
-    shop_leftovers[S4,52,carrot]:
-      Value: 6.5036865e-13
-    shop_leftovers[S4,52,potato]:
-      Value: 6.4749983e-11
-    shop_leftovers[S4,6,beetroot]:
-      Value: 1.840845
-    shop_leftovers[S4,6,cabbage]:
-      Value: 0.23359062
-    shop_leftovers[S4,6,carrot]:
-      Value: 0.6573475
-    shop_leftovers[S4,7,beetroot]:
-      Value: 0.9204225
-    shop_leftovers[S4,7,cabbage]:
-      Value: 0.11679531
-    shop_leftovers[S4,7,carrot]:
-      Value: 0.32867375
-    shop_leftovers[S4,8,beetroot]:
-      Value: 0.46021125
-    shop_leftovers[S4,8,cabbage]:
-      Value: 3.12936
-    shop_leftovers[S4,8,carrot]:
-      Value: 0.16433687
-    shop_leftovers[S4,9,beetroot]:
-      Value: 0.23010562
-    shop_leftovers[S4,9,cabbage]:
-      Value: 1.56468
-    shop_leftovers[S4,9,carrot]:
-      Value: 4.290375
-    shop_leftovers[S4,9,potato]:
-      Value: 3.89606
-    shop_leftovers[S5,10,beetroot]:
-      Value: 1.843225
-    shop_leftovers[S5,11,beetroot]:
-      Value: 0.9216125
-    shop_leftovers[S5,12,beetroot]:
-      Value: 3.68067
-    shop_leftovers[S5,13,beetroot]:
-      Value: 1.840335
-    shop_leftovers[S5,14,beetroot]:
-      Value: 0.9201675
-    shop_leftovers[S5,15,beetroot]:
-      Value: 0.46008375
-    shop_leftovers[S5,16,beetroot]:
-      Value: 0.23004187
-    shop_leftovers[S5,17,beetroot]:
-      Value: 0.11502094
-    shop_leftovers[S5,18,beetroot]:
-      Value: 0.057510469
-    shop_leftovers[S5,19,beetroot]:
-      Value: 0.028755234
-    shop_leftovers[S5,20,beetroot]:
-      Value: 0.014377617
-    shop_leftovers[S5,21,beetroot]:
-      Value: 0.0071888086
-    shop_leftovers[S5,22,beetroot]:
-      Value: 0.0035944043
-    shop_leftovers[S5,23,beetroot]:
-      Value: 0.0017972021
-    shop_leftovers[S5,24,beetroot]:
-      Value: 0.00089860107
-    shop_leftovers[S5,25,beetroot]:
-      Value: 0.00044930054
-    shop_leftovers[S5,26,beetroot]:
-      Value: 0.00022465027
-    shop_leftovers[S5,27,beetroot]:
-      Value: 0.00011232513
-    shop_leftovers[S5,28,beetroot]:
-      Value: 5.6162567e-05
-    shop_leftovers[S5,29,beetroot]:
-      Value: 2.8081284e-05
-    shop_leftovers[S5,30,beetroot]:
-      Value: 1.4040642e-05
-    shop_leftovers[S5,31,beetroot]:
-      Value: 7.0203209e-06
-    shop_leftovers[S5,32,beetroot]:
-      Value: 3.5101604e-06
-    shop_leftovers[S5,33,beetroot]:
-      Value: 1.7550802e-06
-    shop_leftovers[S5,34,beetroot]:
-      Value: 8.7754011e-07
-    shop_leftovers[S5,35,beetroot]:
-      Value: 4.3877006e-07
-    shop_leftovers[S5,36,beetroot]:
-      Value: 2.1938503e-07
-    shop_leftovers[S5,37,beetroot]:
-      Value: 1.0969251e-07
-    shop_leftovers[S5,38,beetroot]:
-      Value: 5.4846257e-08
-    shop_leftovers[S5,39,beetroot]:
-      Value: 2.7423128e-08
-    shop_leftovers[S5,40,beetroot]:
-      Value: 1.3711564e-08
-    shop_leftovers[S5,41,beetroot]:
-      Value: 6.8557822e-09
-    shop_leftovers[S5,42,beetroot]:
-      Value: 3.4278911e-09
-    shop_leftovers[S5,43,beetroot]:
-      Value: 1.7139455e-09
-    shop_leftovers[S5,44,beetroot]:
-      Value: 8.5697294e-10
-    shop_leftovers[S5,45,beetroot]:
-      Value: 4.2848636e-10
-    shop_leftovers[S5,46,beetroot]:
-      Value: 2.1424318e-10
-    shop_leftovers[S5,47,beetroot]:
-      Value: 1.0712159e-10
-    shop_leftovers[S5,48,beetroot]:
-      Value: 5.3560795e-11
-    shop_leftovers[S5,49,beetroot]:
-      Value: 2.6780397e-11
-    shop_leftovers[S5,50,beetroot]:
-      Value: 1.3390199e-11
-    shop_leftovers[S5,51,beetroot]:
-      Value: 6.6950889e-12
-    shop_leftovers[S5,52,beetroot]:
-      Value: 3.3475445e-12
-    shop_leftovers[S5,9,beetroot]:
-      Value: 3.68645
-    shop_leftovers[S6,1,carrot]:
-      Value: 3.10981
-    shop_leftovers[S6,10,carrot]:
-      Value: 0.0081095312
-    shop_leftovers[S6,11,carrot]:
-      Value: 0.0040547656
-    shop_leftovers[S6,12,carrot]:
-      Value: 0.0020273828
-    shop_leftovers[S6,13,carrot]:
-      Value: 3.278195
-    shop_leftovers[S6,14,carrot]:
-      Value: 2.17719
-    shop_leftovers[S6,15,carrot]:
-      Value: 1.088595
-    shop_leftovers[S6,16,carrot]:
-      Value: 0.5442975
-    shop_leftovers[S6,17,carrot]:
-      Value: 2.07604
-    shop_leftovers[S6,18,carrot]:
-      Value: 1.03802
-    shop_leftovers[S6,19,carrot]:
-      Value: 0.51901
-    shop_leftovers[S6,2,carrot]:
-      Value: 2.07604
-    shop_leftovers[S6,20,carrot]:
-      Value: 0.259505
-    shop_leftovers[S6,21,carrot]:
-      Value: 0.1297525
-    shop_leftovers[S6,22,carrot]:
-      Value: 0.06487625
-    shop_leftovers[S6,23,carrot]:
-      Value: 0.032438125
-    shop_leftovers[S6,24,carrot]:
-      Value: 0.016219063
-    shop_leftovers[S6,25,carrot]:
-      Value: 0.0081095313
-    shop_leftovers[S6,26,carrot]:
-      Value: 0.0040547656
-    shop_leftovers[S6,27,carrot]:
-      Value: 0.0020273828
-    shop_leftovers[S6,28,carrot]:
-      Value: 0.0010136914
-    shop_leftovers[S6,29,carrot]:
-      Value: 0.0005068457
-    shop_leftovers[S6,3,carrot]:
-      Value: 1.03802
-    shop_leftovers[S6,30,carrot]:
-      Value: 0.00025342285
-    shop_leftovers[S6,31,carrot]:
-      Value: 0.00012671143
-    shop_leftovers[S6,32,carrot]:
-      Value: 6.3355713e-05
-    shop_leftovers[S6,33,carrot]:
-      Value: 3.1677856e-05
-    shop_leftovers[S6,34,carrot]:
-      Value: 1.5838928e-05
-    shop_leftovers[S6,35,carrot]:
-      Value: 7.9194641e-06
-    shop_leftovers[S6,36,carrot]:
-      Value: 3.9597321e-06
-    shop_leftovers[S6,37,carrot]:
-      Value: 1.979866e-06
-    shop_leftovers[S6,38,carrot]:
-      Value: 9.8993301e-07
-    shop_leftovers[S6,39,carrot]:
-      Value: 4.9496651e-07
-    shop_leftovers[S6,4,carrot]:
-      Value: 0.51901
-    shop_leftovers[S6,40,carrot]:
-      Value: 2.4748325e-07
-    shop_leftovers[S6,41,carrot]:
-      Value: 1.2374163e-07
-    shop_leftovers[S6,42,carrot]:
-      Value: 6.1870813e-08
-    shop_leftovers[S6,43,carrot]:
-      Value: 3.0935407e-08
-    shop_leftovers[S6,44,carrot]:
-      Value: 1.5467703e-08
-    shop_leftovers[S6,45,carrot]:
-      Value: 7.7338517e-09
-    shop_leftovers[S6,46,carrot]:
-      Value: 3.8669258e-09
-    shop_leftovers[S6,47,carrot]:
-      Value: 1.9334628e-09
-    shop_leftovers[S6,48,carrot]:
-      Value: 9.6673136e-10
-    shop_leftovers[S6,49,carrot]:
-      Value: 4.8336568e-10
-    shop_leftovers[S6,5,carrot]:
-      Value: 0.259505
-    shop_leftovers[S6,50,carrot]:
-      Value: 2.416829e-10
-    shop_leftovers[S6,51,carrot]:
-      Value: 1.2084145e-10
-    shop_leftovers[S6,52,carrot]:
-      Value: 6.0420724e-11
-    shop_leftovers[S6,6,carrot]:
-      Value: 0.1297525
-    shop_leftovers[S6,7,carrot]:
-      Value: 0.06487625
-    shop_leftovers[S6,8,carrot]:
-      Value: 0.032438125
-    shop_leftovers[S6,9,carrot]:
-      Value: 0.016219063
-    shop_leftovers[S8,10,beetroot]:
-      Value: 0.059165313
-    shop_leftovers[S8,10,cabbage]:
-      Value: 0.99841
-    shop_leftovers[S8,10,carrot]:
-      Value: 0.711195
-    shop_leftovers[S8,10,potato]:
-      Value: 0.0085710547
-    shop_leftovers[S8,11,beetroot]:
-      Value: 0.029582656
-    shop_leftovers[S8,11,cabbage]:
-      Value: 0.499205
-    shop_leftovers[S8,11,carrot]:
-      Value: 0.3555975
-    shop_leftovers[S8,11,potato]:
-      Value: 0.0042855273
-    shop_leftovers[S8,12,beetroot]:
-      Value: 0.014791328
-    shop_leftovers[S8,12,cabbage]:
-      Value: 2.19555
-    shop_leftovers[S8,12,carrot]:
-      Value: 0.17779875
-    shop_leftovers[S8,12,potato]:
-      Value: 2.1777
-    shop_leftovers[S8,13,beetroot]:
-      Value: 0.0073956641
-    shop_leftovers[S8,13,cabbage]:
-      Value: 1.097775
-    shop_leftovers[S8,13,carrot]:
-      Value: 0.088899375
-    shop_leftovers[S8,13,potato]:
-      Value: 1.08885
-    shop_leftovers[S8,14,beetroot]:
-      Value: 0.003697832
-    shop_leftovers[S8,14,cabbage]:
-      Value: 0.5488875
-    shop_leftovers[S8,14,carrot]:
-      Value: 0.044449688
-    shop_leftovers[S8,14,potato]:
-      Value: 2.29381
-    shop_leftovers[S8,15,beetroot]:
-      Value: 0.001848916
-    shop_leftovers[S8,15,cabbage]:
-      Value: 0.27444375
-    shop_leftovers[S8,15,carrot]:
-      Value: 0.022224844
-    shop_leftovers[S8,15,potato]:
-      Value: 1.146905
-    shop_leftovers[S8,16,beetroot]:
-      Value: 0.00092445801
-    shop_leftovers[S8,16,cabbage]:
-      Value: 0.13722187
-    shop_leftovers[S8,16,carrot]:
-      Value: 0.011112422
-    shop_leftovers[S8,16,potato]:
-      Value: 0.5734525
-    shop_leftovers[S8,17,beetroot]:
-      Value: 0.000462229
-    shop_leftovers[S8,17,cabbage]:
-      Value: 0.068610938
-    shop_leftovers[S8,17,carrot]:
-      Value: 0.0055562109
-    shop_leftovers[S8,17,potato]:
-      Value: 0.28672625
-    shop_leftovers[S8,18,beetroot]:
-      Value: 0.0002311145
-    shop_leftovers[S8,18,cabbage]:
-      Value: 0.034305469
-    shop_leftovers[S8,18,carrot]:
-      Value: 1.27993
-    shop_leftovers[S8,18,potato]:
-      Value: 0.14336312
-    shop_leftovers[S8,19,beetroot]:
-      Value: 0.00011555725
-    shop_leftovers[S8,19,cabbage]:
-      Value: 2.4055
-    shop_leftovers[S8,19,carrot]:
-      Value: 0.639965
-    shop_leftovers[S8,19,potato]:
-      Value: 0.071681562
-    shop_leftovers[S8,2,potato]:
-      Value: 2.19419
-    shop_leftovers[S8,20,beetroot]:
-      Value: 5.7778625e-05
-    shop_leftovers[S8,20,cabbage]:
-      Value: 1.20275
-    shop_leftovers[S8,20,carrot]:
-      Value: 0.3199825
-    shop_leftovers[S8,20,potato]:
-      Value: 0.035840781
-    shop_leftovers[S8,21,beetroot]:
-      Value: 2.8889313e-05
-    shop_leftovers[S8,21,cabbage]:
-      Value: 0.601375
-    shop_leftovers[S8,21,carrot]:
-      Value: 0.15999125
-    shop_leftovers[S8,21,potato]:
-      Value: 0.017920391
-    shop_leftovers[S8,22,beetroot]:
-      Value: 1.4444656e-05
-    shop_leftovers[S8,22,cabbage]:
-      Value: 0.3006875
-    shop_leftovers[S8,22,carrot]:
-      Value: 0.079995625
-    shop_leftovers[S8,22,potato]:
-      Value: 0.0089601953
-    shop_leftovers[S8,23,beetroot]:
-      Value: 7.2223282e-06
-    shop_leftovers[S8,23,cabbage]:
-      Value: 0.15034375
-    shop_leftovers[S8,23,carrot]:
-      Value: 0.039997813
-    shop_leftovers[S8,23,potato]:
-      Value: 0.0044800977
-    shop_leftovers[S8,24,beetroot]:
-      Value: 3.6111641e-06
-    shop_leftovers[S8,24,cabbage]:
-      Value: 0.075171875
-    shop_leftovers[S8,24,carrot]:
-      Value: 0.019998906
-    shop_leftovers[S8,24,potato]:
-      Value: 0.0022400488
-    shop_leftovers[S8,25,beetroot]:
-      Value: 1.805582e-06
-    shop_leftovers[S8,25,cabbage]:
-      Value: 0.037585937
-    shop_leftovers[S8,25,carrot]:
-      Value: 0.0099994531
-    shop_leftovers[S8,25,potato]:
-      Value: 0.0011200244
-    shop_leftovers[S8,26,beetroot]:
-      Value: 9.0279102e-07
-    shop_leftovers[S8,26,cabbage]:
-      Value: 0.018792969
-    shop_leftovers[S8,26,carrot]:
-      Value: 0.0049997266
-    shop_leftovers[S8,26,potato]:
-      Value: 0.00056001221
-    shop_leftovers[S8,27,beetroot]:
-      Value: 4.5139551e-07
-    shop_leftovers[S8,27,cabbage]:
-      Value: 0.0093964844
-    shop_leftovers[S8,27,carrot]:
-      Value: 0.0024998633
-    shop_leftovers[S8,27,potato]:
-      Value: 0.0002800061
-    shop_leftovers[S8,28,beetroot]:
-      Value: 2.2569776e-07
-    shop_leftovers[S8,28,cabbage]:
-      Value: 0.0046982422
-    shop_leftovers[S8,28,carrot]:
-      Value: 0.0012499316
-    shop_leftovers[S8,28,potato]:
-      Value: 0.00014000305
-    shop_leftovers[S8,29,beetroot]:
-      Value: 1.1284888e-07
-    shop_leftovers[S8,29,cabbage]:
-      Value: 0.0023491211
-    shop_leftovers[S8,29,carrot]:
-      Value: 0.00062496582
-    shop_leftovers[S8,29,potato]:
-      Value: 7.0001526e-05
-    shop_leftovers[S8,3,potato]:
-      Value: 1.097095
-    shop_leftovers[S8,30,beetroot]:
-      Value: 5.6424439e-08
-    shop_leftovers[S8,30,cabbage]:
-      Value: 0.0011745605
-    shop_leftovers[S8,30,carrot]:
-      Value: 0.00031248291
-    shop_leftovers[S8,30,potato]:
-      Value: 3.5000763e-05
-    shop_leftovers[S8,31,beetroot]:
-      Value: 2.821222e-08
-    shop_leftovers[S8,31,cabbage]:
-      Value: 0.00058728027
-    shop_leftovers[S8,31,carrot]:
-      Value: 0.00015624146
-    shop_leftovers[S8,31,potato]:
-      Value: 1.7500381e-05
-    shop_leftovers[S8,32,beetroot]:
-      Value: 1.410611e-08
-    shop_leftovers[S8,32,cabbage]:
-      Value: 0.00029364014
-    shop_leftovers[S8,32,carrot]:
-      Value: 7.8120728e-05
-    shop_leftovers[S8,32,potato]:
-      Value: 8.7501907e-06
-    shop_leftovers[S8,33,beetroot]:
-      Value: 7.053055e-09
-    shop_leftovers[S8,33,cabbage]:
-      Value: 0.00014682007
-    shop_leftovers[S8,33,carrot]:
-      Value: 3.9060364e-05
-    shop_leftovers[S8,33,potato]:
-      Value: 4.3750954e-06
-    shop_leftovers[S8,34,cabbage]:
-      Value: 7.3410034e-05
-    shop_leftovers[S8,34,carrot]:
-      Value: 1.9530182e-05
-    shop_leftovers[S8,34,potato]:
-      Value: 2.1875477e-06
-    shop_leftovers[S8,35,cabbage]:
-      Value: 3.6705017e-05
-    shop_leftovers[S8,35,carrot]:
-      Value: 9.7650909e-06
-    shop_leftovers[S8,35,potato]:
-      Value: 1.0937738e-06
-    shop_leftovers[S8,36,cabbage]:
-      Value: 1.8352509e-05
-    shop_leftovers[S8,36,carrot]:
-      Value: 4.8825455e-06
-    shop_leftovers[S8,36,potato]:
-      Value: 5.4688692e-07
-    shop_leftovers[S8,37,cabbage]:
-      Value: 9.1762543e-06
-    shop_leftovers[S8,37,carrot]:
-      Value: 2.4412727e-06
-    shop_leftovers[S8,37,potato]:
-      Value: 2.7344346e-07
-    shop_leftovers[S8,38,cabbage]:
-      Value: 4.5881271e-06
-    shop_leftovers[S8,38,carrot]:
-      Value: 1.2206364e-06
-    shop_leftovers[S8,38,potato]:
-      Value: 1.3672173e-07
-    shop_leftovers[S8,39,cabbage]:
-      Value: 2.2940636e-06
-    shop_leftovers[S8,39,carrot]:
-      Value: 6.1031818e-07
-    shop_leftovers[S8,39,potato]:
-      Value: 6.8360865e-08
-    shop_leftovers[S8,4,beetroot]:
-      Value: 3.78658
-    shop_leftovers[S8,4,carrot]:
-      Value: 1.3209
-    shop_leftovers[S8,4,potato]:
-      Value: 0.5485475
-    shop_leftovers[S8,40,cabbage]:
-      Value: 1.1470318e-06
-    shop_leftovers[S8,40,carrot]:
-      Value: 3.0515909e-07
-    shop_leftovers[S8,40,potato]:
-      Value: 3.4180433e-08
-    shop_leftovers[S8,41,cabbage]:
-      Value: 5.7351589e-07
-    shop_leftovers[S8,41,carrot]:
-      Value: 1.5257955e-07
-    shop_leftovers[S8,41,potato]:
-      Value: 1.7090216e-08
-    shop_leftovers[S8,42,cabbage]:
-      Value: 2.8675795e-07
-    shop_leftovers[S8,42,carrot]:
-      Value: 7.6289773e-08
-    shop_leftovers[S8,42,potato]:
-      Value: 8.5451082e-09
-    shop_leftovers[S8,43,cabbage]:
-      Value: 1.4337897e-07
-    shop_leftovers[S8,43,carrot]:
-      Value: 3.8144886e-08
-    shop_leftovers[S8,43,potato]:
-      Value: 4.2725541e-09
-    shop_leftovers[S8,44,cabbage]:
-      Value: 7.1689486e-08
-    shop_leftovers[S8,44,carrot]:
-      Value: 1.9072443e-08
-    shop_leftovers[S8,44,potato]:
-      Value: 2.1362772e-09
-    shop_leftovers[S8,45,cabbage]:
-      Value: 3.5844743e-08
-    shop_leftovers[S8,45,carrot]:
-      Value: 9.5362216e-09
-    shop_leftovers[S8,45,potato]:
-      Value: 1.0681385e-09
-    shop_leftovers[S8,46,cabbage]:
-      Value: 1.7922372e-08
-    shop_leftovers[S8,46,carrot]:
-      Value: 4.7681108e-09
-    shop_leftovers[S8,46,potato]:
-      Value: 5.3406923e-10
-    shop_leftovers[S8,47,cabbage]:
-      Value: 8.9611858e-09
-    shop_leftovers[S8,47,carrot]:
-      Value: 2.3840554e-09
-    shop_leftovers[S8,47,potato]:
-      Value: 2.6703462e-10
-    shop_leftovers[S8,48,cabbage]:
-      Value: 4.4805929e-09
-    shop_leftovers[S8,48,carrot]:
-      Value: 1.1920277e-09
-    shop_leftovers[S8,48,potato]:
-      Value: 1.3351742e-10
-    shop_leftovers[S8,49,cabbage]:
-      Value: 2.2402964e-09
-    shop_leftovers[S8,49,carrot]:
-      Value: 5.9601379e-10
-    shop_leftovers[S8,49,potato]:
-      Value: 6.6758599e-11
-    shop_leftovers[S8,5,beetroot]:
-      Value: 1.89329
-    shop_leftovers[S8,5,carrot]:
-      Value: 0.66045
-    shop_leftovers[S8,5,potato]:
-      Value: 0.27427375
-    shop_leftovers[S8,50,cabbage]:
-      Value: 1.1201482e-09
-    shop_leftovers[S8,50,carrot]:
-      Value: 2.9800684e-10
-    shop_leftovers[S8,50,potato]:
-      Value: 3.3379299e-11
-    shop_leftovers[S8,51,cabbage]:
-      Value: 5.6007399e-10
-    shop_leftovers[S8,51,carrot]:
-      Value: 1.4900337e-10
-    shop_leftovers[S8,51,potato]:
-      Value: 1.6689539e-11
-    shop_leftovers[S8,52,cabbage]:
-      Value: 2.8003699e-10
-    shop_leftovers[S8,52,carrot]:
-      Value: 7.4501683e-11
-    shop_leftovers[S8,52,potato]:
-      Value: 8.3447693e-12
-    shop_leftovers[S8,6,beetroot]:
-      Value: 0.946645
-    shop_leftovers[S8,6,cabbage]:
-      Value: 1.99682
-    shop_leftovers[S8,6,carrot]:
-      Value: 1.35711
-    shop_leftovers[S8,6,potato]:
-      Value: 0.13713688
-    shop_leftovers[S8,7,beetroot]:
-      Value: 0.4733225
-    shop_leftovers[S8,7,cabbage]:
-      Value: 0.99841
-    shop_leftovers[S8,7,carrot]:
-      Value: 0.678555
-    shop_leftovers[S8,7,potato]:
-      Value: 0.068568437
-    shop_leftovers[S8,8,beetroot]:
-      Value: 0.23666125
-    shop_leftovers[S8,8,cabbage]:
-      Value: 0.499205
-    shop_leftovers[S8,8,carrot]:
-      Value: 0.3392775
-    shop_leftovers[S8,8,potato]:
-      Value: 0.034284219
-    shop_leftovers[S8,9,beetroot]:
-      Value: 0.11833062
-    shop_leftovers[S8,9,cabbage]:
-      Value: 1.99682
-    shop_leftovers[S8,9,carrot]:
-      Value: 1.42239
-    shop_leftovers[S8,9,potato]:
-      Value: 0.017142109
     shop_storage[S1,1,beetroot]:
       Value: 0.841755
     shop_storage[S1,1,cabbage]:
@@ -5687,7 +4375,7 @@ Solution:
     shop_storage[S1,24,beetroot]:
       Value: 0.81481
     shop_storage[S1,24,cabbage]:
-      Value: 1.297695
+      Value: 2.61154
     shop_storage[S1,24,carrot]:
       Value: 0.762535
     shop_storage[S1,24,potato]:
@@ -5811,7 +4499,7 @@ Solution:
     shop_storage[S1,38,carrot]:
       Value: 0.59228
     shop_storage[S1,38,potato]:
-      Value: 1.85368
+      Value: 3.687385
     shop_storage[S1,39,beetroot]:
       Value: 0.723435
     shop_storage[S1,39,cabbage]:
@@ -6347,7 +5035,7 @@ Solution:
     shop_storage[S10,51,carrot]:
       Value: 0.89981
     shop_storage[S10,51,potato]:
-      Value: 1.333395
+      Value: 2.65353
     shop_storage[S10,52,beetroot]:
       Value: 1.567145
     shop_storage[S10,52,cabbage]:
@@ -7173,7 +5861,7 @@ Solution:
     shop_storage[S3,50,potato]:
       Value: 1.46965
     shop_storage[S3,51,beetroot]:
-      Value: 0.753525
+      Value: 1.49872
     shop_storage[S3,51,cabbage]:
       Value: 2.965055
     shop_storage[S3,51,carrot]:
@@ -8839,7 +7527,7 @@ Solution:
     shop_storage[S7,51,beetroot]:
       Value: 1.120385
     shop_storage[S7,51,cabbage]:
-      Value: 1.34215
+      Value: 2.69637
     shop_storage[S7,51,carrot]:
       Value: 0.69445
     shop_storage[S7,51,potato]:
