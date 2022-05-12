@@ -33,12 +33,6 @@ model.demand = Param(
     initialize=load_csv_data("demand")
 )
 
-model.shop_storage_min = Param(
-    model.shops,
-    model.vegetables,
-    initialize=load_csv_data("shop_storage_min")
-)
-
 model.shop_storage_cap = Param(
     model.shops,
     initialize=load_csv_data("shop_storage_cap")
@@ -133,7 +127,7 @@ model.shop_has_enough_veggies = Constraint(
     model.weeks,
     model.vegetables,
     rule=lambda model, shop, week, veggie:
-    model.shop_storage[shop, week, veggie] >= model.demand[shop, week, veggie],
+    model.shop_storage[shop, week, veggie] >= 1.1 * model.demand[shop, week, veggie],
 )
 
 
@@ -145,18 +139,6 @@ model.shop_does_not_exceed_capacity = Constraint(
     rule=lambda model, shop, week:
     sum(model.shop_storage[shop, week, veggie] for veggie in model.vegetables)
     <= model.shop_storage_cap[shop]
-)
-
-
-# Checks if shop has at least 10% of average demand as said in given task
-
-model.shop_has_minimum_veggies = Constraint(
-    model.shops,
-    model.weeks,
-    model.vegetables,
-    rule=lambda model, shop, week, veggie:
-    model.shop_storage[shop, week,
-                       veggie] >= model.shop_storage_min[shop, veggie]
 )
 
 
