@@ -1,3 +1,5 @@
+Zespół 13, 4-os.: Bartłomiej Krawczyk, Konrad Wojda, Mateusz Brzozowski, Mikołaj Kuranowski.
+
 ## Zbiory
 
 - Warzywa: $ W := \lbrace ziemniak, kapusta, burak, marchew \rbrace $; $ w \in W $
