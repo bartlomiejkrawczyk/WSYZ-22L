@@ -1,29 +1,59 @@
-Zespół 13, 4-os.: Bartłomiej Krawczyk, Konrad Wojda, Mateusz Brzozowski, Mikołaj Kuranowski.
+# Wprowadzenie do Systemów Zarządzania - Projekt
+
+Etap II - Model Optymalizacyjny
+
+Zespół 13, 4-os.: 
+- Bartłomiej Krawczyk 
+- Konrad Wojda
+- Mateusz Brzozowski 
+- Mikołaj Kuranowski
 
 ## Zbiory
 
-- Warzywa: $ W := \lbrace ziemniak, kapusta, burak, marchew \rbrace $; $ w \in W $
-- Farmy: $ F := \lbrace P1, P2, P3, P4, P5, P6 \rbrace $; $ f \in F $
-- Magazyny: $ M := \lbrace M1, M2, M3 \rbrace $; $ m \in M $
-- Sklepy: $ S := \lbrace S1, S2, S3, S4, S5, S6, S7, S8, S9, S10 \rbrace $; $ s \in S $
-- Tygodnie: $ T := \lbrace 1, 2, ..., 51, 52 \rbrace $; $ t \in T $
+- Warzywa:  
+$ W := \lbrace ziemniak, kapusta, burak, marchew \rbrace $  
+$ w \in W $; WARZYWA := W
+- Farmy:  
+$ F := \lbrace P1, P2, P3, P4, P5, P6 \rbrace $  
+$ f \in F $; FARMY := F
+- Magazyny:  
+$ M := \lbrace M1, M2, M3 \rbrace $  
+$ m \in M $; MAGAZYNY := M
+- Sklepy:  
+$ S := \lbrace S1, S2, S3, S4, S5, S6, S7, S8, S9, S10 \rbrace $  
+$ s \in S $; SKLEPY := S
+- Tygodnie:  
+$ T := \lbrace 1, 2, ..., 51, 52 \rbrace $  
+$ t \in T $; TYGODNIE := T
 
 ## Parametry
 
 - $ \text{ZAPOTRZEBOWANIE}(s, t, w) $  
+3-wymiarowy tensor ograniczeń SKLEPY x TYGODNIE x WARZYWA
 - $ \text{POJEMNOŚĆ\_MAGAZYNU\_SKLEPOWEGO}(s) $  
+wektor ograniczeń SKLEPY
 - $ \text{POJEMNOŚĆ\_MAGAZYNU}(m) $  
+wektor ograniczeń MAGAZYNY 
 - $ \text{PRODUKCJA\_FARMY}(f, w) $  
+macierz ograniczeń FARMY x WARZYWA
 - $ \text{ODLEGŁOŚĆ\_FM}(f, m) $  
+macierz ograniczeń FARMY x MAGAZYNY
 - $ \text{ODLEGŁOŚĆ\_MS}(m, s) $  
-- $ \text{CENA\_TONO\_KILOMETRA} \ge 0 $
-- $ \text{ZAPAS\_PRODUKTÓW} \ge 0 $
+macierz ograniczeń MAGAZYNY x SKLEPY
+- $ \text{CENA\_TONO\_KILOMETRA} \ge 0 $  
+dodatnia liczba rzeczywista
+- $ \text{ZAPAS\_PRODUKTÓW} \ge 0 $  
+dodatnia liczba rzeczywista  
+
 
 ## Zmienne decyzyjne
 
-- $ \text{transport\_fm}(f, m, w) $
-- $ \text{transport\_ms}(m, s, t, w) $
-- $ \text{stan\_magazynu}(s, t, w) $
+- $ \text{transport\_fm}(f, m, w) $  
+3-wymiarowy tensor FARMY x MAGAZYNY x WARZYWA zmiennych decyzyjnych ze zbioru liczb dodatnich rzeczywistych  
+- $ \text{transport\_ms}(m, s, t, w) $  
+4-wymiarowy tensor MAGAZYNY x SKLEPY x TYGODNIE x WARZYWA zmiennych decyzyjnych ze zbioru liczb dodatnich rzeczywistych  
+- $ \text{stan\_magazynu}(s, t, w) $  
+3-wymiarowy tensor SKLEPY x TYGODNIE x WARZYWA zmiennych decyzyjnych ze zbioru liczb dodatnich rzeczywistych  
 
 ## Kryterium
 
@@ -111,4 +141,22 @@ $$
 \sum_{m \in M} \text{transport\_fm}(f, m, w)
 \le
 \text{PRODUKCJA\_FARMY}(f, w)
+$$
+
+### 7. Produkty z farm do magazynów mogą być wysyłane tylko w jedną stronę (z farm do magazynów)
+
+$$
+\huge\forall \normalsize \substack{f \in F \\ m \in M \\ w \in W}:
+\text{transport\_fm}(f, m, w)
+\ge
+0
+$$
+
+### 8. Produkty z magazynów do sklepów mogą być wysyłane tylko w jedną stronę (z magazynów do sklepów)
+
+$$
+\huge\forall \normalsize \substack{m \in M \\ s \in S \\ t \in T \\ w \in W}:
+\text{transport\_ms}(m, s, t, w)
+\ge
+0
 $$
